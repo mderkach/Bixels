@@ -13,9 +13,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 	<!-- Template Basic Images Start -->
-	<meta property="og:image" content="path/to/image.jpg">
-	<link rel="icon" href="img/favicon/favicon.ico">
-	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+	<meta property="og:image" content="">
+	<link rel="icon" href="#">
+	<link rel="apple-touch-icon" sizes="180x180" href="#">
 	<!-- Template Basic Images End -->
 
 	<!-- Custom Browsers Color Start -->
@@ -27,7 +27,43 @@
 </head>
 
 <body>
-	
+	<main class="login__page">
+		<header>
+			<div class="container">
+				<div class="row">
+					<nav class="p-0 col-12 navbar navbar-expand-lg">
+						<a class="col-3 logo__wrapper" href="#">
+							<img src="./img/logo.png" alt="" class="logo__img img-responsive">
+						</a>
+						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+						 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+						<div class="d-flex justify-content-end collapse navbar-collapse" id="navbarSupportedContent">
+							<form action="#" method="GET" class="form__header">
+								<div class="form-row">
+									<div class="form-group">
+										<button class="btn btn__login">Quest Login</button>
+									</div>
+									<div class="form-group">
+										<input type="text" class="form-control input__login" placeholder="Username or Email">
+									</div>
+									<div class="form-group">
+										<input type="password" class="form-control input__login" placeholder="Password">
+										<a href="#" role="button" class="btn__password_reset">Forgotten password?</a>
+									</div>
+									<div class="form-group">
+										<button class="btn btn__login">Log in</button>
+									</div>
+								</div>
+							</form>
+						</div>
+					</nav>
+
+				</div>
+			</div>
+		</header>
+	</main>
 	<script src="js/scripts.min.js"></script>
 
 </body>
