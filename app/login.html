@@ -32,15 +32,12 @@
 		<header>
 			<div class="container">
 				<div class="row">
-					<nav class="p-0 col-12 navbar navbar-expand-lg">
-						<a class="col-3 logo__wrapper" href="#">
+					<nav class="p-lg-0 col-12 justify-content-between align-items-center navbar">
+						<a class="p-md-0 col-lg-3 col-4 logo__wrapper" href="#">
 							<img src="./img/logo.png" alt="" class="logo__img img-responsive">
 						</a>
-						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-						 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-							<span class="navbar-toggler-icon"></span>
-						</button>
-						<div class="col-9 d-flex justify-content-end collapse navbar-collapse" id="navbarSupportedContent">
+						<!-- DESKTOP -->
+						<div class="col-9 d-none d-lg-flex justify-content-end">
 							<!-- LOGIN FORM -->
 							<form action="#" method="GET" class="form__header">
 								<div class="form-row">
@@ -61,6 +58,11 @@
 							</form>
 							<!-- LOGIN FORM -->
 						</div>
+						<!-- DESKTOP -->
+						<!-- MOBILE -->
+						<a role="button" class="p-0 col-4 d-lg-none mobile__about" href="#">About Bixels</a>
+						<button class="d-lg-none btn btn__login_mobile">Log in</button>
+						<!-- MOBILE -->
 					</nav>
 				</div>
 			</div>
@@ -71,7 +73,7 @@
 			<div class="container">
 				<div class="row">
 					<!-- LEFT COLUMN -->
-					<div class="col-6 main-info__wrapper">
+					<div class="col-lg-6 col-12 main-info__wrapper">
 						<div class="col-12 header__wrapper">
 							<h1 class="header_h1 text-center">First social network for the cryptocurrency industry!</h1>
 						</div>
@@ -79,7 +81,7 @@
 					</div>
 					<!-- LEFT COLUMN -->
 					<!-- RIGHT COLUMN -->
-					<div class="col-6 side-info__wrapper">
+					<div class="col-lg-6 col-12 side-info__wrapper">
 							<div class="col-12 header__wrapper wrapper_create-account">
 								<h2 class="header_h2 header__create-account text-center">Create<br> an account</h2>
 								<p class="header_p text-center">Don't have an account? Join the network<br>	by entering your e-mail address.</p>

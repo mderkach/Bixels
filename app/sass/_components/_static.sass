@@ -1,4 +1,4 @@
-@import "media"
+@import "vars"
 
 header
 	background-color: $accent
@@ -7,10 +7,19 @@ header
 
 	+media-breakpoint-down(desktop-regular)
 		padding: $em*1.2 0
+	+media-breakpoint-down(xl)
+		padding: $em 0
 
 .logo
+	&__wrapper
+
+		+media-breakpoint-down(md)
+			padding: 0
+			
 	&__img
 		width: 254px
 
 		+media-breakpoint-down(laptop-wide)
 			width: 65%
+		+media-breakpoint-down(md)
+			width: 96%
