@@ -1,4 +1,5 @@
 @import "vars"
+@import "animation"
 
 .btn
 	&__login
@@ -36,6 +37,8 @@
 			border: 2px solid #fff
 			color: #fff
 			font: 700 1.5em/1 "OpenSans", sans-serif
+			+media-breakpoint-down(xs)
+				font-size: 0.8em
 
 	&__password
 		&_reset
@@ -89,11 +92,14 @@
 			max-width: 360px
 			height: auto
 			margin: 1em auto 2.3em
+		+media-breakpoint-down(xs)
+			font-size: 1em
+			max-width: 230px
 
 	&-more
 		position: relative
 		display: block
-		margin: 4.5em auto 0 auto
+		margin: 3em auto 0 auto
 		white-space: inherit
 		text-align: center
 		width: 190px
@@ -114,15 +120,19 @@
 			height: 23px
 			opacity: 0.2
 			background: $accent
+			animation: opacity_third 3s infinite
 			&:nth-child(2)
 				bottom: -20px
 				opacity: 1
+				animation: opacity_first 3s infinite
+
 			&:nth-child(3)
 				bottom: -40px
 				opacity: 0.5
-				
+				animation: opacity_second 3s infinite
+
 		+media-breakpoint-down(desktop-regular)
-			margin: 2.25em auto 0 auto
+			margin: 1.5em auto 0 auto
 			font-size: 1.2em
 		+media-breakpoint-down(laptop-wide)
 			width: 180px
@@ -130,7 +140,7 @@
 			span
 				right: 46px
 		+media-breakpoint-down(xl)
-			margin: 1em auto 0 auto
+			margin: 0.75em auto 0 auto
 			font-size: 1em
 			width: 120px
 			height: 140px
@@ -145,6 +155,8 @@
 					bottom: -20px
 		+media-breakpoint-down(md)
 			margin:  4.7em auto 5em auto
+		+media-breakpoint-down(xs)
+			margin: 2em auto
 
 .mobile__about
 	font: 400 1.6em/1 "OpenSans", sans-serif
@@ -154,3 +166,5 @@
 	justify-self: center
 	&:focus
 		color: #fff
+	+media-breakpoint-down(xs)
+		font-size: 0.8em
