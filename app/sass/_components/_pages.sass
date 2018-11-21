@@ -1,3 +1,5 @@
+@import "media"
+
 // login //
 .login
 	&__page
@@ -7,19 +9,42 @@
 		.main-info, .side-info
 			&__wrapper
 				padding: $em*6.1 0 $em*5.3 0
+
+				+media-breakpoint-down(desktop-regular)
+					padding: $em*3 0 $em*2.5 0
+				+media-breakpoint-down(laptop-wide)
+					padding: $em*1.5 0 $em*1.25 0
+
 		.cube
-			margin: 90px auto 0 auto
+			margin: $em*5 auto 0 auto
+
+			+media-breakpoint-down(desktop-regular)
+				margin-top: $em*2
+				max-width: 85%
+			+media-breakpoint-down(laptop-wide)
+				margin-top: $em
+				min-width: 70%
+
 		.side-info__wrapper
 			padding-top: $em*8.8
 			padding-left: $em*8.3
 			padding-right: $em*8.3
 			background: linear-gradient(to top, rgba(16, 25, 33, 0.12) 0%, rgba(13, 24, 35, 0.38) 39%, rgba(14, 24, 37, 0.57) 59%, rgba(13, 25, 37, 0.6) 100%);
+			
+			+media-breakpoint-down(desktop-regular)
+				padding-top: $em*4.4 
+				padding-left: $em*4.15 
+				padding-right: $em*4.15 
+			+media-breakpoint-down(laptop-wide)
+				padding-top: $em*2.2
+			
 
 .wrapper
   &_create-account
     .header
       &__create-account
-        margin-bottom: 45px
+        margin-bottom: 0.6em
+
 .create-project
 	line-height: 1.5
 
