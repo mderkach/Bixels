@@ -19,13 +19,7 @@ body
 	font-size: 18px
 	overflow-x: hidden
 	color: $text
-	input, textarea
-		border: #666 1px solid
-		outline: none
-		&:focus:required:invalid
-			border-color: red
-		&:required:valid
-			border-color: green
+	
 
 .img-responsive
 	display: block
@@ -40,6 +34,8 @@ body
 b, strong
 	font-weight: bold
 
+.lh-1
+	line-height: 1	
 // typography //
 @import "_components/_typography"
 // /typography //
@@ -59,3 +55,7 @@ b, strong
 // pages //
 @import "_components/_pages"
 // /pages //
+
+// modals //
+@import "_components/_modals"
+// /modals //

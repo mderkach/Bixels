@@ -45,11 +45,12 @@
 										<button class="btn btn__login">Quest Login</button>
 									</div>
 									<div class="form-group">
-										<input type="text" class="form-control input__login" placeholder="Username or Email">
+										<input type="text" class="form-control input__login" placeholder="Username or Email" required>
 									</div>
 									<div class="form-group">
-										<input type="password" class="form-control input__login" placeholder="Password">
-										<a href="#" role="button" class="btn__password_reset">Forgotten password?</a>
+										<input type="password" class="form-control input__login" placeholder="Password" required>
+										<a href="#" role="button" class="btn__password_reset" data-toggle="modal" data-target="#login__modal">Forgotten
+											password?</a>
 									</div>
 									<div class="form-group">
 										<button class="btn btn__login">Log in</button>
@@ -61,7 +62,7 @@
 						<!-- DESKTOP -->
 						<!-- MOBILE -->
 						<a role="button" class="p-0 col-4 d-lg-none mobile__about" href="#">About Bixels</a>
-						<button class="d-lg-none btn btn__login_mobile">Log in</button>
+						<button data-toggle="modal" data-target="#login__modal" class="d-lg-none btn btn__login_mobile">Log in</button>
 						<!-- MOBILE -->
 					</nav>
 				</div>
@@ -82,20 +83,21 @@
 					<!-- LEFT COLUMN -->
 					<!-- RIGHT COLUMN -->
 					<div class="col-lg-6 col-12 side-info__wrapper">
-							<div class="col-12 header__wrapper wrapper_create-account">
-								<h2 class="header_h2 header__create-account text-center">Create<br> an account</h2>
-								<p class="header_p text-center">Don't have an account? Join the network<br>	by entering your e-mail address.</p>
-							</div>
-							<button class="btn btn-register">REGISTER NOW</button>
-							<p class="header_p create-project text-center"><strong>Create a Project</strong> for your company, enter to blockchain society.</p>
-							<div class="btn-more__wrapper">
-									<button class="btn btn-more">
-										More about <strong>Bixels</strong>
-										<span class="chevron"></span>
-										<span class="chevron"></span>
-										<span class="chevron"></span>
-									</button>
-							</div>
+						<div class="col-12 header__wrapper wrapper_create-account">
+							<h2 class="header_h2 header__create-account text-center">Create<br> an account</h2>
+							<p class="header_p text-center">Don't have an account? Join the network<br> by entering your e-mail address.</p>
+						</div>
+						<button class="btn btn-register">REGISTER NOW</button>
+						<p class="header_p create-project text-center"><strong>Create a Project</strong> for your company, enter to
+							blockchain society.</p>
+						<div class="btn-more__wrapper">
+							<button class="btn btn-more">
+								More about <strong>Bixels</strong>
+								<span class="chevron"></span>
+								<span class="chevron"></span>
+								<span class="chevron"></span>
+							</button>
+						</div>
 					</div>
 					<!-- RIGHT COLUMN -->
 				</div>
@@ -103,6 +105,81 @@
 			<!-- CONTENT -->
 		</section>
 	</main>
+	<!-- MODAL  -->
+	<div class="modal__login modal fade" tabindex="-1" role="dialog" id="login__modal">
+		<div class="modal-dialog" role="dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title" id="exampleModalCenterTitle"> <strong>Join</strong> the network</h4>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<ul class="nav nav-tabs nav-tabs_modal justify-content-center">
+						<li class="nav-item">
+							<a class="nav-link active" href="#login" id="login-tab" data-toggle="tab" role="tab" aria-controls="login"
+							 aria-selected="true">Sign In</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#register" id="register-tab" data-toggle="tab" role="tab" aria-controls="register"
+							 aria-selected="false">New user?</a>
+						</li>
+					</ul>
+					<div class="tab-content" id="modal__login_tabs">
+						<div class="tab-pane fade show active" id="login" role="tabpanel" aria-labelledby="login-tab">
+							<p>If you are already a registered user, please enter your username and password.</p>
+							<!-- FORM LOGIN IN MODAL -->
+							<form class="form__modal" action="#" method="GET">
+								<div class="form-group">
+									<label for="username">Enter username or email</label>
+									<input type="text" class="form-control" id="username" placeholder="Enter username or email" required>
+								</div>
+								<div class="form-group">
+									<label for="password">Password</label>
+									<input type="password" class="form-control" id="password" placeholder="Password" required>
+								</div>
+								<div class="form-group custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" id="remember" required>
+									<label class="custom-control-label" for="remember">Remember me?</label>
+								</div>
+								<div class="form-group d-flex justify-content-between">
+									<div class="p-0 col-auto">
+										<button type="submit" class="btn">Submit</button>
+									</div>
+									<div class="p-0 col-auto text-right lh-1">
+										<small>
+											Forgotten Password?
+											<a role="button" class="btn__password_new" href="#">Create new</a>
+										</small>
+									</div>
+								</div>
+							</form>
+							<!-- FORM LOGIN IN MODAL -->
+						</div>
+						<div class="tab-pane fade" id="register" role="tabpanel" aria-labelledby="register-tab">
+							<p>No account yet? Connect to the network via e-mail</p>
+							<!-- FORM REGISTER IN MODAL -->
+							<form class="form__modal" action="#" method="POST">
+								<div class="form-group">
+									<label for="email">Email</label>
+									<input type="email" class="form-control" id="email" placeholder="Email" required>
+								</div>
+								<div class="form-group d-flex justify-content-between">
+									<div class="p-0 col-auto">
+										<button type="submit" class="btn">Register</button>
+									</div>
+								</div>
+							</form>
+							<!-- FORM REGISTER IN MODAL -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- MODAL  -->
+
 	<script src="js/scripts.min.js"></script>
 
 </body>

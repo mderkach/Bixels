@@ -1,5 +1,14 @@
 @import "vars"
 
+input
+	&:focus
+		box-shadow: none !important
+		outline: none !important
+	&:focus:required:invalid
+		border-color: red
+	&:required:valid
+		border-color: #fff
+
 .form
 	&__header
 		.form-group
@@ -32,3 +41,31 @@
 					width: 125px
 					font-size: 0.6em
 					line-height: 0.6em
+	&__modal
+		label
+			&[for=username], &[for=password], &[for=email]
+				font: 700 1em/1em "OpenSans", sans-serif
+			&[for=remember]
+				font: 400 0.7em/2em "OpenSans", sans-serif
+				&:before, &:after
+					top: 8px
+				&:before
+					background-color: #fff
+		.custom-checkbox 
+			.custom-control-input
+				&:checked ~ .custom-control-label
+					&:before
+						background-color: $accent
+						border: 1px solid #fff
+				&:focus ~ .custom-control-label
+					&:before
+						box-shadow: none
+						outline: none
+		input
+			&[type=text],&[type=password], &[type=email]
+				border-radius: 10px
+				border: 2px solid #fff
+				background-color: transparent
+				color: #fff
+				&::placeholder
+					color: #fff

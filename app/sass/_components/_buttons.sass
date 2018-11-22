@@ -56,6 +56,8 @@
 				font-size: 0.8em
 			+media-breakpoint-down(laptop-wide)
 				font-size: 0.6em
+		&_new
+			display: block
 
 	&-register
 		appearance: none
@@ -106,7 +108,7 @@
 		height: 220px
 		font: 400 1.7em/1.5 "OpenSans", sans-serif
 		color: $accent
-		background: url("../../img/polygon.png") no-repeat
+		background: url("../img/polygon.png") no-repeat
 		background-size: contain
 		transition: all 0.4s
 		&:hover
@@ -157,6 +159,23 @@
 			margin:  4.7em auto 5em auto
 		+media-breakpoint-down(xs)
 			margin: 2em auto
+	
+	&[type=submit]
+		border-radius: 10px
+		background-color: #fff
+		border: 2px solid #fff
+		color: $accent
+		text-transform: uppercase
+		&:hover
+			border: 2px solid #fff
+			color: #fff
+			background-color: $accent
+	&__password_new
+		color: #fff
+		text-decoration: underline
+		&:hover
+			color: #fff
+			text-decoration: none
 
 .mobile__about
 	font: 400 1.6em/1 "OpenSans", sans-serif
