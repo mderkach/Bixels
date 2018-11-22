@@ -10,6 +10,9 @@ header
 	+media-breakpoint-down(xl)
 		padding: $em 0
 
+.regular-header
+	padding: 1.111em 0
+
 .logo
 	&__wrapper
 
@@ -23,3 +26,55 @@ header
 			width: 65%
 		+media-breakpoint-down(md)
 			width: 96%
+
+.main-nav
+	.nav
+		&-link 
+			position: relative
+			color: #fff
+			font: 400 1.611em/2.357em "OpenSans", sans-serif
+			padding: 0 0.85em !important
+			&.active
+				&:after
+					display: block
+					content: ""
+					position: absolute
+					height: 5px
+					width: 70%
+					background: #fff
+					bottom: -26px
+.profile
+	&__name
+		padding: 0
+		color: #fff
+		font: 400 1.611em/2.357em "OpenSans", sans-serif
+		&:hover
+			color: #fff
+			cursor: pointer
+	&__avatar
+		border-radius: 50%
+		width: 60px
+		height: 60px
+	&__dropdown
+		border: none
+		background: $accent
+		color: #fff
+		left: auto
+		right: 20px
+		top: 92px
+		.dropdown
+			&-item
+				color: #fff
+				&:hover, &:active, &:focus
+					background: $text
+				i
+					margin-right: 1em
+
+.dropdown-toggle
+	&::after
+		background-image: url('../img/icon-dropdown.png')
+		width: 27px
+		height: 26px
+		margin-left: .255em
+		vertical-align: 0
+		border: none

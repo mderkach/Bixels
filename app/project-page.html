@@ -23,12 +23,54 @@
 	<!-- Custom Browsers Color End -->
 
 	<link rel="stylesheet" href="css/main.min.css">
-
+	<!-- INCLUDE FONT AWESOME -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+	 crossorigin="anonymous">
+	<!-- INCLUDE FONT AWESOME -->
 </head>
 
 <body>
-
-  	<script src="js/scripts.min.js"></script>
+	<!-- HEADER -->
+	<header class="regular-header">
+		<div class="container">
+			<div class="row">
+				<nav class="p-lg-0 col-12 justify-content-between align-items-center navbar navbar-expand-lg">
+					<a class="p-md-0 col-lg-2 col-4 logo__wrapper" href="#">
+						<img src="./img/logo.png" alt="" class="logo__img img-responsive">
+					</a>
+					<!-- REGULAR NAVBAR -->
+					<div class="p-0 collapse navbar-collapse col-6 d-flex justify-content-between">
+						<div class="navbar-nav main-nav">
+							<a class="nav-item nav-link" href="#">Activity</a>
+							<a class="nav-item nav-link active" href="#">Projects</a>
+							<a class="nav-item nav-link" href="#">Calendar</a>
+						</div>
+						<a href="#" role="button" class="add-project"><i class="fas fa-plus"></i>ADD NEW PROJECT</a>
+					</div>
+					<a href="#" class="offset-1 search"><i class="fas fa-search"></i></a>
+					<div class="p-0 collapse navbar-collapse col-auto d-flex justify-content-end">
+						<ul class="navbar-nav profile__wrapper">
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle profile__name" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									Etherium Project
+									<img class="profile__avatar" src="./img/default_avatar.jpg" alt="">
+								</a>
+								<div class="dropdown-menu profile__dropdown">
+									<a class="dropdown-item" href="#"><i class="fas fa-user"></i> My profile</a>
+									<a class="dropdown-item" href="#"><i class="fas fa-edit"></i>Account settings</a>
+									<div class="dropdown-divider"></div>	
+									<a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt"></i>Log Out</a>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<!-- REGULAR NAVBAR -->
+				</nav>
+			</div>
+		</div>
+	</header>
+	<!-- HEADER -->
+	<script src="js/scripts.min.js"></script>
 
 </body>
 
