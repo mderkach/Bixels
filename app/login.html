@@ -27,7 +27,7 @@
 </head>
 
 <body>
-	<main class="login__page">
+	<main class="login__page unselectable">
 		<!-- HEADER -->
 		<header class="login-header">
 			<div class="container">
@@ -45,11 +45,12 @@
 										<button class="btn btn__login">Quest Login</button>
 									</div>
 									<div class="form-group">
-										<input type="text" class="form-control input__login" placeholder="Username or Email" required>
+										<input type="text" class="form-control input__login" placeholder="Username or Email" spellcheck="false">
+										<div class="invalid">invalid login or password!</div>
 									</div>
 									<div class="form-group">
-										<input type="password" class="form-control input__login" placeholder="Password" required>
-										<a href="#" role="button" class="btn__password_reset" data-toggle="modal" data-target="#login__modal">Forgotten
+										<input type="password" class="form-control input__login" placeholder="Password" spellcheck="false">
+										<a href="#" role="button" class="btn__password_reset" data-toggle="modal" data-target="#recovery__modal">Forgotten
 											password?</a>
 									</div>
 									<div class="form-group">
@@ -85,7 +86,7 @@
 					<div class="col-lg-6 col-12 side-info__wrapper">
 						<div class="col-12 header__wrapper wrapper_create-account">
 							<h2 class="header_h2 header__create-account text-center">Create<br> an account</h2>
-							<p class="header_p text-center">Don't have an account? Join the network<br> by entering your e-mail address.</p>
+							<!-- <p class="header_p text-center">Don't have an account? Join the network<br> by entering your e-mail address.</p> -->
 						</div>
 						<button class="btn btn-register">REGISTER NOW</button>
 						<p class="header_p create-project text-center"><strong>Create a Project</strong> for your company, enter to
@@ -105,12 +106,12 @@
 			<!-- CONTENT -->
 		</section>
 	</main>
-	<!-- MODAL  -->
+	<!-- MODAL LOGIN  -->
 	<div class="modal__login modal fade" tabindex="-1" role="dialog" id="login__modal">
 		<div class="modal-dialog" role="dialog">
 			<div class="modal-content">
 				<div class="modal-header">
-					<h4 class="modal-title" id="exampleModalCenterTitle"> <strong>Join</strong> the network</h4>
+					<h4 class="modal-title"> <strong>Join</strong> the network</h4>
 					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 						<span aria-hidden="true">&times;</span>
 					</button>
@@ -133,14 +134,14 @@
 							<form class="form__modal" action="#" method="GET">
 								<div class="form-group">
 									<label for="username">Enter username or email</label>
-									<input type="text" class="form-control" id="username" placeholder="Enter username or email" required>
+									<input type="text" class="form-control" id="username" placeholder="Enter username or email" spellcheck="false">
 								</div>
 								<div class="form-group">
 									<label for="password">Password</label>
-									<input type="password" class="form-control" id="password" placeholder="Password" required>
+									<input type="password" class="form-control" id="password" placeholder="Password" spellcheck="false">
 								</div>
 								<div class="form-group custom-control custom-checkbox">
-									<input type="checkbox" class="custom-control-input" id="remember" required>
+									<input type="checkbox" class="custom-control-input" id="remember" spellcheck="false">
 									<label class="custom-control-label" for="remember">Remember me?</label>
 								</div>
 								<div class="form-group d-flex justify-content-between">
@@ -163,7 +164,7 @@
 							<form class="form__modal" action="#" method="POST">
 								<div class="form-group">
 									<label for="email">Email</label>
-									<input type="email" class="form-control" id="email" placeholder="Email" required>
+									<input type="email" class="form-control" id="email" placeholder="Email" spellcheck="false">
 								</div>
 								<div class="form-group d-flex justify-content-between">
 									<div class="p-0 col-auto">
@@ -178,8 +179,43 @@
 			</div>
 		</div>
 	</div>
-	<!-- MODAL  -->
-
+	<!-- MODAL LOGIN -->
+	<!-- MODAL RECOVERY -->
+	<div class="modal__login modal fade" tabindex="-1" role="dialog" id="recovery__modal">
+		<div class="modal-dialog" role="dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title"> <strong>Password</strong> recovery</h4>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<!-- FORM RECOVERY IN MODAL -->
+					<p>Just enter your email address. We'll send you recovery instructions!</p>
+					<form class="form__modal" action="#" method="POST">
+						<div class="form-group">
+							<input type="text" class="form-control" id="email_recovery" placeholder="Your email" spellcheck="false">
+						</div>
+						<div class="form-group">
+							<!-- CAPTCHA IMG  -->
+							<img class="captcha_img" id="accountrecoverpassword-verifycode-image" src="./img/captcha_example.png" alt="">
+							<!-- CAPTCHA IMG  -->
+							<input type="text" class="form-control" id="catpcha" placeholder="Enter security code above" spellcheck="false">
+						</div>
+						<div class="form-group d-flex justify-content-between">
+							<div class="p-0 col-auto">
+								<button type="submit" class="btn">Reset password</button>
+								<button data-dismiss="modal" aria-label="Close" class="btn btn-close">Back</button>
+							</div>
+						</div>
+					</form>
+					<!-- FORM RECOVERY IN MODAL -->
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- MODAL RECOVERY -->
 	<script src="js/scripts.min.js"></script>
 
 </body>
