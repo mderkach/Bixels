@@ -1,3 +1,35 @@
+.aside
+  width: 100%
+  max-width: 340px
+  &-nav
+    padding-left: 0
+    padding-right: 0
+  &-nav_link
+    position: relative
+    padding-left: 25px
+    color: #555555
+    font: 400 1.4em "Open Sans",sans-serif
+    &.active
+      background: #f7f7f7
+      &:before
+        display: block
+        position: absolute
+        top: 0
+        left: 0
+        content: ""
+        width: 8px
+        height: 100%
+        background: $accent
+        
+    &:hover
+      color: #555555
+      background: #f7f7f7
+    i
+      line-height: 1.5
+      text-align: center
+      width: 38px
+      height: 36px
+
 .aside-info
   &__wrapper
     margin: 0 25px
@@ -20,3 +52,4 @@
     display: flex
     align-items: center
     justify-content: space-around
+  

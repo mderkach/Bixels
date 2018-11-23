@@ -70,11 +70,14 @@
 			</div>
 		</div>
 	</header>
+	<!-- LAYOUT -->
 	<div id="layout-content">
 		<div class="container pre-content__wrapper">
 			<div class="row">
 				<div class="p-0 col-12 card profile__head">
 					<div class="card-header profile__header">
+						<!-- PROFILE HEAD -->
+						<!-- назначать бэкграунд через style -->
 						<div class="d-flex profile__title-info" style="background: #000">
 							<div class="profile__avatar-main">
 								<img src="./img//default-avatar_big.png" alt="" class="img-responsive">
@@ -82,18 +85,34 @@
 							<h2 class="align-self-end profile__name">Etherium Project</h2>
 						</div>
 					</div>
-					<div class="card-body profile__body">
+					<!-- PROFILE HEAD -->
+					<div class="d-flex card-body profile__body">
 						<div class="d-flex align-items-center justify-content-between profile__stat" id="followers">
 							<p class="stat__descr">Followers:</p>
 							<p class="stat__count">231</p>
 						</div>
 						<div class="d-flex align-items-center justify-content-between profile__stat" id="rating">
-								<p class="stat__descr">Rating:</p>
-								<p class="stat__count">5</p>
-							</div>
+							<p class="stat__descr">Rating:</p>
+							<p class="stat__count">5</p>
+						</div>
 					</div>
 				</div>
-				<aside class="p-0 col-3 aside-left">
+				<aside class="p-0 col-auto aside aside-left">
+					<!-- NAV ASIDE -->
+					<div class="card aside-nav__wrapper">
+						<nav class=" card-body nav flex-column aside-nav">
+							<a class="nav-link aside-nav_link" href="#"><i class="fab fa-youtube"></i> Videos</a>
+							<a class="nav-link aside-nav_link" href="#"><i class="far fa-file-pdf"></i> White Paper</a>
+							<a class="nav-link aside-nav_link active" href="#"><i class="far fa-calendar-alt"></i> Events</a>
+							<a class="nav-link aside-nav_link" href="#"><i class="fas fa-info-circle"></i> Information</a>
+							<a class="nav-link aside-nav_link" href="#"><i class="fas fa-headset"></i> Supports</a>
+							<a class="nav-link aside-nav_link" href="#"><i class="fas fa-cog"></i> Settings</a>
+							<a class="nav-link aside-nav_link" href="#"><i class="far fa-calendar"></i> Calendar</a>
+							<a class="nav-link aside-nav_link" href="#"><i class="far fa-file"></i> Files</a>
+							<a class="nav-link aside-nav_link" href="#"><i class="fas fa-images"></i> Photo</a>
+						</nav>
+					</div>
+					<!-- NAV ASIDE -->
 					<div class="aside-info__wrapper aside-info_project-registration">
 						<div class="aside-info__head">
 							<h4 class="text-center">First, select<br> your area below.</h4>
@@ -104,11 +123,11 @@
 						</div>
 					</div>
 				</aside>
-				<main role="main" class="col-6">
+				<main role="main" class="col-auto mx-auto">
 
 
 				</main>
-				<aside class="p-0 col-3 aside-right">
+				<aside class="p-0 col-auto aside aside-right">
 
 				</aside>
 			</div>
