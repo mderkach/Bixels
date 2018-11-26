@@ -71,10 +71,11 @@
 			</div>
 		</div>
 	</header>
+	<!-- HEADER -->
 	<!-- LAYOUT -->
 	<div id="layout-content">
 		<div class="container pre-content__wrapper">
-			<div class="row">
+			<div class="row flexible-row">
 				<div class="col-xs-12 panel profile__head">
 					<div class="panel-header profile__header">
 						<!-- PROFILE HEAD -->
@@ -98,7 +99,7 @@
 						</div>
 					</div>
 				</div>
-				<aside class="col-xs-3 aside pull-left">
+				<aside class="col-xs-3 aside_left">
 					<!-- NAV ASIDE -->
 					<div class="panel aside-nav__wrapper" id="navigation">
 						<nav class="panel-body nav aside-nav">
@@ -126,19 +127,42 @@
 				</aside>
 				<main role="main" class="main-content-flow">
 					<div class="col-xs-12 panel">
-						
+
 					</div>
 				</main>
-				<aside class="col-xs-3 aside pull-right">
-					<div class="panel" id="events">
-						<div class="panel-header">
+				<aside class="col-xs-3 aside_right">
+					<div class="panel panel__events" id="events">
+						<div class="panel-header events__header">
 							<i class="far fa-calendar-alt"></i> Events
 						</div>
-						<ul class="list-group list-group-flush">
-							<li class="list-group-item">Cras justo odio</li>
-							<li class="list-group-item">Dapibus ac facilisis in</li>
-							<li class="list-group-item">Vestibulum at eros</li>
-						</ul>
+						<div class="panel events-nav__wrapper">
+							<nav class="panel-body nav events-nav media-list">
+								<a href="#" class="nav-link events-nav_link">
+									<div class="media events-media">
+										<div class="media-body events-media-body text-break">
+											<strong>Token Economy event (Berlin)</strong>
+											<span class="time">8 oct. 2018 y.</span>
+										</div>
+									</div>
+								</a>
+								<a href="#" class="nav-link events-nav_link">
+									<div class="media events-media">
+										<div class="media-body events-media-body text-break">
+											<strong>Token Economy event (Berlin)</strong>
+											<span class="time">8 oct. 2018 y.</span>
+										</div>
+									</div>
+								</a>
+								<a href="#" class="nav-link events-nav_link">
+									<div class="media events-media">
+										<div class="media-body events-media-body text-break">
+											<strong>Token Economy event (Berlin)</strong>
+											<span class="time">8 oct. 2018 y.</span>
+										</div>
+									</div>
+								</a>
+							</nav>
+						</div>
 					</div>
 				</aside>
 			</div>
@@ -146,7 +170,6 @@
 	</div>
 
 
-	<!-- HEADER -->
 	<script src="js/scripts.min.js"></script>
 
 </body>
