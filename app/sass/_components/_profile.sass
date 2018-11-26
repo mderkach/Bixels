@@ -1,16 +1,19 @@
 .profile
   &__head
     margin-bottom: 40px
+    padding: 0
   &__header
     padding: 5px
     background: #fff
     border-bottom: none
   &__title-info
+    display: flex
     position: relative
     border-radius: 6px
     height: 290px
     width: 100%
     .profile__name
+      align-self: flex-end
       font: 400 3.167em/2.25em "OpenSans", sans-serif
       margin-bottom: 0
       &:hover
@@ -26,10 +29,15 @@
     border-radius: 50%
 
   &__body
+    display: flex
     padding-left: 485px
 
   &__stat
+    display: flex
+    align-items: center
+    justify-content: space-between
     max-width: 215px
+    width: 100%
     margin-right: 30px
     .stat
       &__descr
@@ -40,3 +48,8 @@
         margin-bottom: 0
         color: $accent
         font: 700 2em/2em "OpenSans", sans-serif
+
+.open > .profile__dropdown
+    display: flex
+    flex-direction: column
+    padding: 10px

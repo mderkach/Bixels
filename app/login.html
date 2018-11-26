@@ -32,38 +32,36 @@
 		<header class="login-header">
 			<div class="container">
 				<div class="row">
-					<nav class="p-lg-0 col-12 justify-content-between align-items-center navbar">
-						<a class="p-md-0 col-lg-2 col-4 logo__wrapper" href="#">
+					<nav class="p-lg-0 col-xs-12 navbar">
+						<a class="p-md-0 col-lg-2 col-xs-4 logo__wrapper" href="#">
 							<img src="./img/logo.png" alt="" class="logo__img img-responsive">
 						</a>
 						<!-- DESKTOP -->
-						<div class="col-10 d-none d-lg-flex justify-content-end">
+						<div class="col-lg-10 form__header-wrapper">
 							<!-- LOGIN FORM -->
 							<form action="#" method="GET" class="form__header">
-								<div class="form-row">
-									<div class="form-group">
-										<button class="btn btn__login">Quest Login</button>
-									</div>
-									<div class="form-group">
-										<input type="text" class="form-control input__login" placeholder="Username or Email" spellcheck="false">
-										<div class="invalid">invalid login or password!</div>
-									</div>
-									<div class="form-group">
-										<input type="password" class="form-control input__login" placeholder="Password" spellcheck="false">
-										<a href="#" role="button" class="btn__password_reset" data-toggle="modal" data-target="#recovery__modal">Forgotten
-											password?</a>
-									</div>
-									<div class="form-group">
-										<button class="btn btn__login">Log in</button>
-									</div>
+								<div class="form-group">
+									<button class="btn btn__login">Quest Login</button>
+								</div>
+								<div class="form-group">
+									<input type="text" class="form-control input__login" placeholder="Username or Email" spellcheck="false">
+									<div class="invalid">invalid login or password!</div>
+								</div>
+								<div class="form-group">
+									<input type="password" class="form-control input__login" placeholder="Password" spellcheck="false">
+									<a href="#" role="button" class="btn__password_reset" data-toggle="modal" data-target="#recovery__modal">Forgotten
+										password?</a>
+								</div>
+								<div class="form-group">
+									<button class="btn btn__login">Log in</button>
 								</div>
 							</form>
 							<!-- LOGIN FORM -->
 						</div>
 						<!-- DESKTOP -->
 						<!-- MOBILE -->
-						<a role="button" class="p-0 col-4 d-lg-none mobile__about" href="#">About Bixels</a>
-						<button data-toggle="modal" data-target="#login__modal" class="d-lg-none btn btn__login_mobile">Log in</button>
+						<a role="button" class="col-xs-4 mobile__about" href="#">About Bixels</a>
+						<button data-toggle="modal" data-target="#login__modal" class="btn btn__login_mobile">Log in</button>
 						<!-- MOBILE -->
 					</nav>
 				</div>
@@ -117,9 +115,9 @@
 					</button>
 				</div>
 				<div class="modal-body">
-					<ul class="nav nav-tabs nav-tabs_modal justify-content-center">
-						<li class="nav-item">
-							<a class="nav-link active" href="#login" id="login-tab" data-toggle="tab" role="tab" aria-controls="login"
+					<ul id="tabs" class="nav nav-tabs nav-tabs_modal" data-tabs="tabs">
+						<li class="nav-item active">
+							<a class="nav-link" href="#login" id="login-tab" data-toggle="tab" role="tab" aria-controls="login"
 							 aria-selected="true">Sign In</a>
 						</li>
 						<li class="nav-item">
@@ -128,7 +126,7 @@
 						</li>
 					</ul>
 					<div class="tab-content" id="modal__login_tabs">
-						<div class="tab-pane fade show active" id="login" role="tabpanel" aria-labelledby="login-tab">
+						<div class="tab-pane active" id="login" role="tabpanel" aria-labelledby="login-tab">
 							<p>If you are already a registered user, please enter your username and password.</p>
 							<!-- FORM LOGIN IN MODAL -->
 							<form class="form__modal" action="#" method="GET">
@@ -145,10 +143,10 @@
 									<label class="custom-control-label" for="remember">Remember me?</label>
 								</div>
 								<div class="form-group d-flex justify-content-between">
-									<div class="p-0 col-auto">
+									<div class="p-0 col-xs-6">
 										<button type="submit" class="btn">Submit</button>
 									</div>
-									<div class="p-0 col-auto text-right lh-1">
+									<div class="text-right lh-1">
 										<small>
 											Forgotten Password?
 											<a role="button" class="btn__password_new" href="#">Create new</a>

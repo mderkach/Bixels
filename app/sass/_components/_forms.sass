@@ -13,12 +13,27 @@ input
 	text-decoration: underline
 	color: #610000
 	font-size: 14px
+	width: 100%
 	max-width: 250px
-	margin: 0 auto
-//	visibility: hidden
+	margin: 5px auto 0
+	@include dr
+		font-size: 12px
+
+	@include lw
+		font-size: 10px
+		max-width: 175px
 
 .form
 	&__header
+		display: flex
+		&-wrapper
+			display: flex
+			flex-direction: row
+			justify-content: flex-end
+
+			@include md
+				display: none
+				
 		.form-group
 			margin-bottom: 0
 		.input
@@ -35,17 +50,17 @@ input
 				&::placeholder
 					color: #fff
 
-				+media-breakpoint-down(desktop-regular)
+				@include dr
 					margin: 0 5px 
 					font-size: 1.2em
 					line-height: 1.2em
-				+media-breakpoint-down(laptop-wide)
+				@include lw
 					font-size: 0.8em
 					line-height: 0.8em
 					height: 100%
 					max-height: 32px
 					width: 96%
-				+media-breakpoint-down(laptop-wide)
+				@include xl
 					width: 125px
 					font-size: 0.6em
 					line-height: 0.6em

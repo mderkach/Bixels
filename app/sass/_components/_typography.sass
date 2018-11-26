@@ -4,18 +4,18 @@
     font: 600 2.8em/1.15 "OpenSans",sans-serif
     margin-bottom: 0
     
-    +media-breakpoint-down(desktop-regular)
+    @include dr
       font-size: 2.2em
-    +media-breakpoint-down(laptop-wide)
+    @include lw
       font-size: 2em
-    +media-breakpoint-down(xl)
+    @include xl
       max-width: 365px
       margin: 0 auto
       font-size: 1em
-    +media-breakpoint-down(md)
+    @include md
       max-width: 100%
       font-size: 2.7em
-    +media-breakpoint-down(xs)
+    @include xs
       font-size: 1em
 
   &_p
@@ -23,13 +23,13 @@
     font: 400 1.6em/1.15 "OpenSans",sans-serif
     margin-bottom: 0
     
-    +media-breakpoint-down(desktop-regular)
+    @include dr
      font-size: 1.2em
-    +media-breakpoint-down(xl)
+    @include xl
       font-size: 0.8em
-    +media-breakpoint-down(md)
+    @include md
       font-size: 1.6em
-    +media-breakpoint-down(xs)
+    @include xs
       font-size: 0.8em
       br
         display: none
@@ -39,15 +39,15 @@
     font: 700 4.2em/1.15 "OpenSans",sans-serif
     margin-bottom: 0
     
-    +media-breakpoint-down(desktop-regular)
+    @include dr
       font-size: 2.1em
-    +media-breakpoint-down(laptop-wide)
+    @include lw
       font-size: 1.8em 
-    +media-breakpoint-down(xl)
+    @include xl
       font-size: 1.2em
-    +media-breakpoint-down(md)
+    @include md
       font-size: 4.2em
-    +media-breakpoint-down(xs)
+    @include xs
       font-size: 1.2em
 
   &_create-project

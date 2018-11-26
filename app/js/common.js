@@ -44,6 +44,5 @@ document.addEventListener('DOMContentLoaded', function () {
     errorMessage.style.visibility = 'visible';
   } else {
     errorMessage.style.visibility = 'hidden';
-  }
-
+  }  
 });

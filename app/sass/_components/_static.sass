@@ -3,9 +3,9 @@ header
 	box-shadow: $box-shadow
 	padding: $em*1.45 0 $em*2 0
 
-	+media-breakpoint-down(desktop-regular)
+	@include dr
 		padding: $em*1.2 0
-	+media-breakpoint-down(xl)
+	@include xl
 		padding: $em 0
 
 .regular-header
@@ -14,15 +14,15 @@ header
 .logo
 	&__wrapper
 
-		+media-breakpoint-down(md)
+		@include md
 			padding: 0
 			
 	&__img
 		width: 254px
 
-		+media-breakpoint-down(laptop-wide)
+		@include lw
 			width: 65%
-		+media-breakpoint-down(md)
+		@include md
 			width: 96%
 
 .main-nav
@@ -38,14 +38,34 @@ header
 					content: ""
 					position: absolute
 					height: 5px
-					width: 70%
+					width: auto
+					max-width: 100%
 					background: #fff
 					bottom: -26px
+					right: 20px
+					left: 20px
 .profile
+	&__wrapper
+		padding: 0
+		list-style: none
 	&__name
 		padding: 0
 		color: #fff
 		font: 400 1.611em/2.357em "OpenSans", sans-serif
+		text-decoration: none
+		&:focus, &:active
+			color: #fff
+			text-decoration: none
+			cursor: pointer
+			box-shadow: none
+			outline: none
+		.caret
+			background-image: url('../img/icon-dropdown.png')
+			width: 27px
+			height: 26px
+			margin-left: .255em
+			border: none
+			vertical-align: unset
 		&:hover
 			color: #fff
 			cursor: pointer
@@ -58,8 +78,8 @@ header
 		background: $accent
 		color: #fff
 		left: auto
-		right: 20px
-		top: 92px
+		right: 0
+		top: 80px
 		.dropdown
 			&-item
 				color: #fff
@@ -68,11 +88,40 @@ header
 				i
 					margin-right: 1em
 
-.dropdown-toggle
-	&::after
-		background-image: url('../img/icon-dropdown.png')
-		width: 27px
-		height: 26px
-		margin-left: .255em
-		vertical-align: 0
-		border: none
+// .dropdown-toggle
+// 	&::after
+// 		background-image: url('../img/icon-dropdown.png')
+// 		width: 27px
+// 		height: 26px
+// 		margin-left: .255em
+// 		vertical-align: 0
+// 		border: none
+
+.navbar
+	&:before, &:after
+			display: none
+	border: 0
+	border-radius: 0
+	margin-bottom: 0
+	display: flex
+	flex-direction: row
+	justify-content: space-between
+	align-items: center
+	&-nav
+		&:before, &:after
+			display: none
+	&.navbar-expand-lg
+		&:before, &:after
+			display: none
+
+	@include lg
+			padding: 0
+
+.regular-navbar
+	
+	&.navbar-collapse
+		display: flex!important
+		align-items: center
+		flex-direction: row
+		&:before, &:after
+			display: none

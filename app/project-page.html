@@ -34,12 +34,12 @@
 	<header class="regular-header">
 		<div class="container">
 			<div class="row">
-				<nav class="p-lg-0 col-12 justify-content-between align-items-center navbar navbar-expand-lg">
-					<a class="p-md-0 col-lg-2 col-4 logo__wrapper" href="#">
+				<nav class="col-xs-12 navbar navbar-expand-lg">
+					<a class="col-lg-2 col-xs-4 logo__wrapper" href="#">
 						<img src="./img/logo.png" alt="" class="logo__img img-responsive">
 					</a>
 					<!-- REGULAR NAVBAR -->
-					<div class="p-0 collapse navbar-collapse col-6 d-flex justify-content-between">
+					<div class="p-0 collapse regular-navbar navbar-collapse col-6 d-flex justify-content-between">
 						<div class="navbar-nav main-nav">
 							<a class="nav-item nav-link active" href="#">Events</a>
 							<a class="nav-item nav-link" href="#">Calendar</a>
@@ -47,14 +47,15 @@
 						</div>
 						<a href="#" role="button" class="add-project"><i class="fas fa-plus"></i>ADD NEW PROJECT</a>
 					</div>
-					<a href="#" class="offset-1 search"><i class="fas fa-search"></i></a>
-					<div class="p-0 collapse navbar-collapse col-auto d-flex justify-content-end">
+					<a href="#" class="search"><i class="fas fa-search"></i></a>
+					<div class="collapse navbar-collapse">
 						<ul class="navbar-nav profile__wrapper">
 							<li class="nav-item dropdown">
 								<a class="nav-link dropdown-toggle profile__name" href="#" data-toggle="dropdown" aria-haspopup="true"
 								 aria-expanded="false">
 									Etherium Project
 									<img class="profile__avatar" src="./img/default_avatar.jpg" alt="">
+									<span class="caret"></span>
 								</a>
 								<div class="dropdown-menu profile__dropdown">
 									<a class="dropdown-item" href="#"><i class="fas fa-user"></i> My profile</a>
@@ -74,33 +75,33 @@
 	<div id="layout-content">
 		<div class="container pre-content__wrapper">
 			<div class="row">
-				<div class="p-0 col-12 card profile__head">
-					<div class="card-header profile__header">
+				<div class="col-xs-12 panel profile__head">
+					<div class="panel-header profile__header">
 						<!-- PROFILE HEAD -->
 						<!-- назначать бэкграунд через style -->
-						<div class="d-flex profile__title-info" style="background: #000">
+						<div class="profile__title-info" style="background: #000">
 							<div class="profile__avatar-main">
 								<img src="./img//default-avatar_big.png" alt="" class="img-responsive">
 							</div>
-							<h2 class="align-self-end profile__name">Etherium Project</h2>
+							<h2 class="profile__name">Etherium Project</h2>
 						</div>
 					</div>
 					<!-- PROFILE HEAD -->
-					<div class="d-flex card-body profile__body">
-						<div class="d-flex align-items-center justify-content-between profile__stat" id="followers">
+					<div class="panel-body profile__body">
+						<div class="profile__stat" id="followers">
 							<p class="stat__descr">Followers:</p>
 							<p class="stat__count">231</p>
 						</div>
-						<div class="d-flex align-items-center justify-content-between profile__stat" id="rating">
+						<div class="profile__stat" id="rating">
 							<p class="stat__descr">Rating:</p>
 							<p class="stat__count">5</p>
 						</div>
 					</div>
 				</div>
-				<aside class="p-0 col-auto aside aside-left">
+				<aside class="col-xs-3 aside pull-left">
 					<!-- NAV ASIDE -->
-					<div class="card aside-nav__wrapper">
-						<nav class=" card-body nav flex-column aside-nav">
+					<div class="panel aside-nav__wrapper" id="navigation">
+						<nav class="panel-body nav aside-nav">
 							<a class="nav-link aside-nav_link" href="#"><i class="fab fa-youtube"></i> Videos</a>
 							<a class="nav-link aside-nav_link" href="#"><i class="far fa-file-pdf"></i> White Paper</a>
 							<a class="nav-link aside-nav_link active" href="#"><i class="far fa-calendar-alt"></i> Events</a>
@@ -123,12 +124,22 @@
 						</div>
 					</div>
 				</aside>
-				<main role="main" class="col-auto mx-auto">
-
-
+				<main role="main" class="main-content-flow">
+					<div class="col-xs-12 panel">
+						
+					</div>
 				</main>
-				<aside class="p-0 col-auto aside aside-right">
-
+				<aside class="col-xs-3 aside pull-right">
+					<div class="panel" id="events">
+						<div class="panel-header">
+							<i class="far fa-calendar-alt"></i> Events
+						</div>
+						<ul class="list-group list-group-flush">
+							<li class="list-group-item">Cras justo odio</li>
+							<li class="list-group-item">Dapibus ac facilisis in</li>
+							<li class="list-group-item">Vestibulum at eros</li>
+						</ul>
+					</div>
 				</aside>
 			</div>
 		</div>

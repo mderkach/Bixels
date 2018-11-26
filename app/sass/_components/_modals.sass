@@ -5,6 +5,10 @@
 				background: $accent
 				color: #fff
 			&-header
+				display: flex
+				justify-content: space-between
+				&:before, &:after
+					display: none
 				border-bottom: none
 				position: relative
 			.modal-title
@@ -17,9 +21,14 @@
 				margin-left: 0
 
 .nav-tabs_modal
+	display: flex
+	justify-content: center
+	margin: 0
 	border-bottom-color: #fff
 	.nav-link.active
 		color: $accent
 		border-color: #fff
 	.nav-link
 		color: #fff
+		&:hover
+			background: transparent
