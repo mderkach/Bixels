@@ -99,7 +99,7 @@
 						</div>
 					</div>
 				</div>
-				<aside class="col-xs-3 aside_left">
+				<aside class="aside_left">
 					<!-- NAV ASIDE -->
 					<div class="panel aside-nav__wrapper" id="navigation">
 						<nav class="panel-body nav aside-nav">
@@ -126,11 +126,35 @@
 					</div>
 				</aside>
 				<main role="main" class="main-content-flow">
-					<div class="col-xs-12 panel">
-
+					<div class="col-xs-12 panel panel__quick-post">
+						<form action="#" class="form__quick-post">
+							<div class="form-group">
+								<input class="form-control" type="text" name="message" id="contentForm_message_input" placeholder="Anything new?">
+							</div>
+							<hr>
+							<div class="btn_container">
+								<button id="post_submit_button" class="btn btn-info quick-post__submit">send</button>
+								<div class="btn-group quick-post__group">
+									<button class="btn btn-default fileinput-button tt quick-post__file-input" data-action-click="file.upload"
+									 data-action-target="#contentFormFiles" data-original-title="Загрузить файлы">
+										<i class="fas fa-cloud-upload-alt"></i>
+										<input type="file" id="contentFormFiles" name="files[]" multiple="multiple" title="Upload file"
+										 data-upload-url="" data-upload-drop-zone="#contentFormBody" data-upload-progress="#contentFormFiles_progress"
+										 data-upload-preview="#contentFormFiles_preview" data-upload-form="" data-upload-single=""
+										 data-upload-submit-name="fileList[]" data-upload-hide-in-stream="" data-php-max-file-uploads="20"
+										 data-php-max-file-uploads-message="Sorry, you can only upload up to 20 files at once."
+										 data-max-number-of-files="20" data-max-number-of-files-message="This upload field only allows a maximum of 50 files."
+										 data-ui-widget="file.Upload" data-ui-init="1" style="display:none">
+									</button>
+								</div>
+								<div class="pull-right quick-post__preferences">
+									<span class="label label-info label-public">Публичное</span>
+								</div>
+							</div>
+						</form>
 					</div>
 				</main>
-				<aside class="col-xs-3 aside_right">
+				<aside class="aside_right">
 					<div class="panel panel__events" id="events">
 						<div class="panel-header events__header">
 							<i class="far fa-calendar-alt"></i> Events
