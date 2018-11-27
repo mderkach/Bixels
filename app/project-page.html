@@ -99,6 +99,7 @@
 						</div>
 					</div>
 				</div>
+				<!-- container for side content -->
 				<aside class="aside_left">
 					<!-- NAV ASIDE -->
 					<div class="panel aside-nav__wrapper" id="navigation">
@@ -125,11 +126,15 @@
 						</div>
 					</div>
 				</aside>
+				<!-- container for side content -->
+				<!-- container for posts -->
 				<main role="main" class="main-content-flow">
+					<!-- quick post -->
 					<div class="col-xs-12 panel panel__quick-post">
 						<form action="#" class="form__quick-post">
 							<div class="form-group">
-								<input class="form-control" type="text" name="message" id="contentForm_message_input" placeholder="Anything new?">
+								<input class="form-control" type="text" name="message" id="contentForm_message_input" placeholder="Anything new?"
+								 onfocus="this.placeholder=''" onblur="this.placeholder='Anything new?'">
 							</div>
 							<hr>
 							<div class="btn_container">
@@ -149,11 +154,245 @@
 								</div>
 								<div class="pull-right quick-post__preferences">
 									<span class="label label-info label-public">Публичное</span>
+									<ul class="nav nav-pills preferences">
+										<li class="dropdown preferences__dropdown">
+											<a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-label="Toggle post menu" aria-haspopup="true"
+											 aria-expanded="false">
+												<i class="fa fa-cogs"></i></a>
+											<ul class="dropdown-menu pull-right">
+												<li>
+													<a data-action-click="notifyUser">
+														<i class="fa fa-bell"></i>
+														Notify Users
+													</a>
+												</li>
+												<li>
+													<a id="contentForm_visibility_entry" data-action-click="changeVisibility">
+														<i class="fa fa-unlock"></i> Make private
+													</a>
+												</li>
+											</ul>
+										</li>
+									</ul>
 								</div>
 							</div>
 						</form>
 					</div>
+					<!-- quick post -->
+					<!-- Sample post -->
+					<div class="col-xs-12 panel post">
+						<div class="panel-head post__head">
+							<!-- post header -->
+							<div class="media">
+								<div class="media-left">
+									<a href="#">
+										<img class="media-object post__avatar" src="./img/default_avatar.jpg" alt="">
+									</a>
+								</div>
+								<div class="media-body">
+									<h4 class="media-heading">
+										<a href="#">Etherium project</a>
+									</h4>
+									<p class="time">25 sep. 2018 г.</p>
+								</div>
+								<div class="media-right">
+									<ul class="nav nav-pills preferences">
+										<li class="dropdown">
+											<a class="dropdown-toggle chevron-down" data-toggle="dropdown" href="#" aria-label="Toggle stream entry menu"
+											 aria-haspopup="true">
+												<i class="fa fa-angle-down"></i>
+											</a>
+											<ul class="dropdown-menu pull-right">
+												<li>
+													<!-- load modal confirm widget -->
+													<a href="#" data-action-click="delete">
+														<i class="fa fa-trash-o"></i> Delete
+													</a>
+												</li>
+												<li>
+													<a href="#" class="stream-entry-edit-link" data-action-click="edit" data-action-url="/u/adminadmin/post/post/edit?id=25">
+														<i class="fa fa-pencil"></i> Edit
+													</a>
+													<a href="#" class="stream-entry-cancel-edit-link" data-action-click="cancelEdit" style="display:none;">
+														<i class="fa fa-pencil"></i> Cancel Edit
+													</a>
+												</li>
+												<li>
+													<a href="#" class="makePriavteLink" data-action-click="toggleVisibility" data-action-url="/content/content/toggle-visibility?id=256">
+														<i class="fa fa-lock makePrivate"></i> Make private
+													</a>
+												</li>
+												<li>
+													<a id="notification_off_256" class="turnOffNotifications" href="#" style="display: block">
+														<i class="fa fa-bell-slash-o"></i> Disable notifications
+													</a>
+													<a id="notification_on_256" class="turnOnNotifications" href="#" style="display: none"><i class="fa fa-bell-o"></i>Enable
+														notifications
+													</a>
+												</li>
+												<li>
+													<a href="#" data-action-click="permalink" data-content-permalink="http://putinka.beget.tech/content/perma?id=256">
+														<i class="fa fa-link"></i>Permanent link
+													</a>
+												</li>
+												<li>
+													<a href="#" data-action-click="pin" data-action-url="/content/content/pin?id=256">
+														<i class="fa fa-arrow-up"></i>Pin to top
+													</a>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<!-- post header -->
+						</div>
+						<!-- post content -->
+						<div class="panel-body post__body">
+							<p>
+								One of the important issues that has been brought up over the course of the Olympic stress-net release is the
+								large amount of data that clients are required to store; over little more than three months of operation, and
+								particularly during the last month, the amount of data in each Ethereum client’s blockchain folder has
+								ballooned to an impressive 10-40 gigabytes, depending on which client you are using and whether or not
+								compression is enabled. Although it is important to note that this is indeed a stress test scenario where users
+								are incentivized to dump transactions on the blockchain paying only the free test-ether as a transaction fee,
+								and transaction throughput levels are thus several times higher than Bitcoin, it is nevertheless a legitimate
+								concern for users, who in many cases do not have hundreds of gigabytes to spare on storing other people’s
+								transaction histories.
+								First of all, let us begin by exploring why the current Ethereum client database is so large. Ethereum, unlike
+								Bitcoin, has the property that every block contains something called the “state root”: the root hash of a
+								specialized kind of Merkle tree which stores the entire state of the system: all account balances, contract
+								storage, contract code and account nonces are inside.
+							</p>
+						</div>
+						<!-- post content -->
+						<!-- post footer -->
+						<div class="panel-body post__footer">
+							<div class="media-left footer-body">
+								<div class="post__stat" id="likes">
+									<p class="stat__descr"><i class="fas fa-thumbs-up"></i> Likes:</p>
+									<p class="stat__count">5</p>
+								</div>
+								<div class="post__stat" id="comments">
+									<p class="stat__descr"><i class="fas fa-comment-dots"></i> Comments:</p>
+									<p class="stat__count">5</p>
+								</div>
+							</div>
+						</div>
+						<!-- post footer -->
+					</div>
+					<!-- Sample post -->
+					<!-- Sample post -->
+					<div class="col-xs-12 panel post">
+						<div class="panel-head post__head">
+							<!-- post header -->
+							<div class="media">
+								<div class="media-left">
+									<a href="#">
+										<img class="media-object post__avatar" src="./img/default_avatar.jpg" alt="">
+									</a>
+								</div>
+								<div class="media-body">
+									<h4 class="media-heading">
+										<a href="#">Etherium project</a>
+									</h4>
+									<p class="time">25 sep. 2018 г.</p>
+								</div>
+								<div class="media-right">
+									<ul class="nav nav-pills preferences">
+										<li class="dropdown">
+											<a class="dropdown-toggle chevron-down" data-toggle="dropdown" href="#" aria-label="Toggle stream entry menu"
+											 aria-haspopup="true">
+												<i class="fa fa-angle-down"></i>
+											</a>
+											<ul class="dropdown-menu pull-right">
+												<li>
+													<!-- load modal confirm widget -->
+													<a href="#" data-action-click="delete">
+														<i class="fa fa-trash-o"></i> Delete
+													</a>
+												</li>
+												<li>
+													<a href="#" class="stream-entry-edit-link" data-action-click="edit" data-action-url="/u/adminadmin/post/post/edit?id=25">
+														<i class="fa fa-pencil"></i> Edit
+													</a>
+													<a href="#" class="stream-entry-cancel-edit-link" data-action-click="cancelEdit" style="display:none;">
+														<i class="fa fa-pencil"></i> Cancel Edit
+													</a>
+												</li>
+												<li>
+													<a href="#" class="makePriavteLink" data-action-click="toggleVisibility" data-action-url="/content/content/toggle-visibility?id=256">
+														<i class="fa fa-lock makePrivate"></i> Make private
+													</a>
+												</li>
+												<li>
+													<a id="notification_off_256" class="turnOffNotifications" href="#" style="display: block">
+														<i class="fa fa-bell-slash-o"></i> Disable notifications
+													</a>
+													<a id="notification_on_256" class="turnOnNotifications" href="#" style="display: none"><i class="fa fa-bell-o"></i>Enable
+														notifications
+													</a>
+												</li>
+												<li>
+													<a href="#" data-action-click="permalink" data-content-permalink="http://putinka.beget.tech/content/perma?id=256">
+														<i class="fa fa-link"></i>Permanent link
+													</a>
+												</li>
+												<li>
+													<a href="#" data-action-click="pin" data-action-url="/content/content/pin?id=256">
+														<i class="fa fa-arrow-up"></i>Pin to top
+													</a>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<!-- post header -->
+						</div>
+						<!-- post content -->
+						<div class="panel-body post__body">
+							<p>
+								One of the important issues that has been brought up over the course of the Olympic stress-net release is the
+								large amount of data that clients are required to store; over little more than three months of operation, and
+								particularly during the last month, the amount of data in each Ethereum client’s blockchain folder has
+								ballooned to an impressive 10-40 gigabytes, depending on which client you are using and whether or not
+								compression is enabled. Although it is important to note that this is indeed a stress test scenario where users
+								are incentivized to dump transactions on the blockchain paying only the free test-ether as a transaction fee,
+								and transaction throughput levels are thus several times higher than Bitcoin, it is nevertheless a legitimate
+								concern for users, who in many cases do not have hundreds of gigabytes to spare on storing other people’s
+								transaction histories.
+								First of all, let us begin by exploring why the current Ethereum client database is so large. Ethereum, unlike
+								Bitcoin, has the property that every block contains something called the “state root”: the root hash of a
+								specialized kind of Merkle tree which stores the entire state of the system: all account balances, contract
+								storage, contract code and account nonces are inside.
+							</p>
+						</div>
+						<!-- post content -->
+						<!-- post footer -->
+						<div class="panel-body post__footer">
+							<div class="media-left footer-body">
+								<div class="post__stat" id="likes">
+									<p class="stat__descr"><i class="fas fa-thumbs-up"></i> Likes:</p>
+									<p class="stat__count">5</p>
+								</div>
+								<div class="post__stat" id="comments">
+									<p class="stat__descr"><i class="fas fa-comment-dots"></i> Comments:</p>
+									<p class="stat__count">5</p>
+								</div>
+							</div>
+						</div>
+						<!-- post footer -->
+					</div>
+					<!-- Sample post -->
+					<!-- load more -->
+					<button class="col-xs-2 btn btn__post-more">
+						<i class="fa fa-angle-down" style="margin-left: 10px;"></i>
+						Show <span id="posts-count">12</span> more
+					</button>
+					<!-- load more -->
 				</main>
+				<!-- container for posts -->
 				<aside class="aside_right">
 					<div class="panel panel__events" id="events">
 						<div class="panel-header events__header">
