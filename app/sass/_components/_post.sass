@@ -12,16 +12,35 @@
                 color: $accent
                 text-decoration: none
                 font: 700 1.6em/1.45 "OpenSans", sans-serif
+
+                @include dr
+                    font-size: 1.2em
+                    line-height: 1.2
         .time
             color: #768a8f
             font: 400 1.4em/1.45 "OpenSans", sans-serif
             margin-bottom: 0
+
+            @include dr
+                font-size: 1.2em
+                line-height: 1.2
+
         .post__avatar
             width: 72px
             height: 72px
+
+            @include dr
+                width: 50px
+                height: 50px
         .chevron-down
             color: #7a7a7a
             font-size: 35px
+            &:focus, &:hover, &:active
+                background-color: transparent
+            @include dr
+                font-size: 1em
+                padding: 0
+
     &__body
         padding-left: 0
         padding-right: 0
@@ -41,3 +60,6 @@
                 justify-content: space-between
                 align-items: center
                 margin-right: 80px
+
+.nav .open>.chevron-down, .nav .open>.chevron-down:focus, .nav .open>.chevron-down:hover
+    background-color: transparent

@@ -238,15 +238,17 @@ button, a
 	text-transform: uppercase
 	font: 700 1.5em/1.8 "OpenSans", sans-serif
 	padding: 0 0.741em
+
+	@include dr
+		font-size: 1.2em
+		line-height: 1.5
+		padding: 0 0.5em
+
 	&:hover
 		border: 2px solid #fff
 		color: #fff
 		background-color: $accent
 		text-decoration: none
-
-	@include dr
-		font-size: 1.2em
-		line-height: 1.5
 
 .search
 	display: block
