@@ -44,6 +44,10 @@ header
 					bottom: -26px
 					right: 20px
 					left: 20px
+			
+			@include dr
+				font-size: 1.4em
+				line-height: 2
 .profile
 	&__wrapper
 		padding: 0
@@ -66,14 +70,30 @@ header
 			margin-left: .255em
 			border: none
 			vertical-align: unset
+
+			@include dr
+				width: 20px
+				height: 20px
+				background-size: contain
+				
 		&:hover
 			color: #fff
 			cursor: pointer
 			text-decoration: none
+
+		@include dr
+			font-size: 1.2em
+			line-height: 1.5
+
 	&__avatar
 		border-radius: 50%
 		width: 60px
 		height: 60px
+
+		@include dr
+			width: 40px
+			height: 40px
+
 	&__dropdown
 		border: none
 		background: $accent
@@ -100,7 +120,7 @@ header
 
 .navbar
 	&:before, &:after
-			display: none
+		display: none	
 	border: 0
 	border-radius: 0
 	margin-bottom: 0
