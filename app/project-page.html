@@ -76,9 +76,9 @@
 	<div id="layout-content">
 		<div class="container pre-content__wrapper">
 			<div class="row flexible-row">
+				<!-- PROFILE HEAD -->
 				<div class="col-xs-12 panel profile__head">
 					<div class="panel-header profile__header">
-						<!-- PROFILE HEAD -->
 						<!-- назначать бэкграунд через style -->
 						<div class="profile__title-info" style="background: #000">
 							<div class="profile__avatar-main">
@@ -87,7 +87,6 @@
 							<h2 class="profile__name">Etherium Project</h2>
 						</div>
 					</div>
-					<!-- PROFILE HEAD -->
 					<div class="panel-body profile__body">
 						<div class="profile__stat" id="followers">
 							<p class="stat__descr">Followers:</p>
@@ -99,6 +98,7 @@
 						</div>
 					</div>
 				</div>
+				<!-- PROFILE HEAD -->
 				<!-- container for side content -->
 				<aside class="aside_left">
 					<!-- NAV ASIDE -->
@@ -387,13 +387,14 @@
 					<!-- Sample post -->
 					<!-- load more -->
 					<button class="col-xs-2 btn btn__post-more">
-						<i class="fa fa-angle-down" style="margin-left: 10px;"></i>
+						<i class="fa fa-angle-down"></i>
 						Show <span id="posts-count">12</span> more
 					</button>
 					<!-- load more -->
 				</main>
 				<!-- container for posts -->
 				<aside class="aside_right">
+					<!-- events -->
 					<div class="panel panel__events" id="events">
 						<div class="panel-header events__header">
 							<i class="far fa-calendar-alt"></i> Events
@@ -427,6 +428,32 @@
 							</nav>
 						</div>
 					</div>
+					<!-- events -->
+					<!-- videos -->
+					<div class="panel panel__events" id="videos">
+						<div class="panel-header events__header">
+							<i class="fab fa-youtube"></i> Videos
+						</div>
+						<div class="panel events-nav__wrapper">
+							<ul class="panel-body media-list video-list">
+								<li class="col-xs-12">
+									<video class="list-item-video" controls>
+										<source src="#" type="video/mp4">
+										<source src="#" type="video/ogg">
+										Your browser does not support the video tag.
+									</video>
+								</li>
+								<li class="col-xs-12">
+									<video class="list-item-video" controls>
+										<source src="#" type="video/mp4">
+										<source src="#" type="video/ogg">
+										Your browser does not support the video tag.
+									</video>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!-- videos -->
 				</aside>
 			</div>
 		</div>
