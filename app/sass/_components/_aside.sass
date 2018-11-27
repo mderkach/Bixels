@@ -6,6 +6,8 @@
     
     @include dr
       width: auto
+    @include lr
+      max-width: 200px
 
   &_right
     padding: 0
@@ -15,6 +17,8 @@
     @include dr
       width: auto
       max-width: 350px
+    @include lr
+      max-width: 250px
 
   &-nav
     display: flex
@@ -29,6 +33,8 @@
 
     @include dr
       font-size: 1em
+    @include lr
+      padding-left: 5px
 
     &.active
       background: #f7f7f7
@@ -57,7 +63,12 @@
 .aside-info
   &__wrapper
     margin: 0 25px
+
+    @include lr
+      margin: 0
+
   &_project-registration
+    max-width: 245px
     .aside-info
       &__body
         img
@@ -67,7 +78,10 @@
           text-align: left
           color: #768a8f
           font: 400 1.333em "Open Sans",sans-serif
-    max-width: 245px
+
+          @include lr
+            font-size: 1em
+
   &__head
     h4
       color: #768a8f
@@ -97,6 +111,8 @@
         @include dr
           font-size: 1em
           line-height: 1.65
+        @include lr
+          font-size: 0.8em
 
       &-nav
         padding: 0
@@ -107,6 +123,8 @@
 
           @include dr
             padding: 1em 0 1.4em 1em
+          @include lw
+            padding: 0.5em 0 0.5em 1em
 
           .events-media
             &-body
@@ -120,6 +138,8 @@
 
                 @include dr
                   font-size: 1em
+                @include dr
+                  font-size: 0.8em
 
               .time
                 color: #768a8f
@@ -127,21 +147,34 @@
 
                 @include dr
                   font-size: 0.8em
+                @include lr
+                  font-size: 0.6em
 
 .video-list
-  .list-item-video
-    max-width: 362px
-    max-height: 225px
-    width: 100%
-    height: 100%
-    border-radius: 10px
+  .list-item
+    padding: 0
+    &-video
+      max-width: 362px
+      max-height: 225px
+      width: 100%
+      height: 100%
+      border-radius: 10px
 
 .photos-list
   li
     margin-bottom: 20px
+    
+    @include lr
+      padding: 0
+
+    .photos-item
+      width: 100%
 
 .bixel-can
   margin-top: 70px
   width: 100%
   max-width: 300px
   cursor: pointer
+
+  @include lw
+    margin-top: 30px

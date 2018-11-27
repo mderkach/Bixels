@@ -58,6 +58,12 @@ b, strong
 .pre-content__wrapper
 	padding-top: 65px
 
+	@include dr
+		padding-top: 40px
+	@include lw
+		padding-top: 20px
+
+
 .main-content-flow
 	margin: 0 auto
 	float: none
@@ -69,9 +75,10 @@ b, strong
 
 	@include dr
 		flex: 0 1 56%
-	@media screen and (max-width: 1919px)
+	@media screen and (max-width: 1441px) and (max-width: 1919px)
 		flex: 0 1 50%
-
+	@include lr
+		flex: 0 1 59%
 .flexible-row
 	display: flex
 	flex-direction: row

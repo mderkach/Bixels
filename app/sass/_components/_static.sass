@@ -32,6 +32,16 @@ header
 			color: #fff
 			font: 400 1.611em/2.357em "OpenSans", sans-serif
 			padding: 0 0.85em !important
+
+			@include dr
+				font-size: 1.4em
+				line-height: 2
+				
+			@include lr
+				padding: 0 0.5em !important
+				font-size: 1.2em
+				line-height: 1.65
+
 			&.active
 				&:after
 					display: block
@@ -44,10 +54,11 @@ header
 					bottom: -26px
 					right: 20px
 					left: 20px
-			
-			@include dr
-				font-size: 1.4em
-				line-height: 2
+
+					@include lr
+						bottom: -32px
+						right: 10px
+						left: 10px
 .profile
 	&__wrapper
 		padding: 0
