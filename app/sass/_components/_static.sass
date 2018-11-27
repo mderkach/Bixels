@@ -10,6 +10,9 @@ header
 
 .regular-header
 	padding: 1.111em 0
+	
+	@include lg
+		padding: 1em 0
 
 .logo
 	&__wrapper
@@ -21,7 +24,7 @@ header
 		width: 254px
 
 		@include lw
-			width: 65%
+			width: 100%
 		@include md
 			width: 96%
 
@@ -36,11 +39,12 @@ header
 			@include dr
 				font-size: 1.4em
 				line-height: 2
-				
 			@include lr
 				padding: 0 0.5em !important
 				font-size: 1.2em
 				line-height: 1.65
+			@include lg
+				font-size: 1em
 
 			&.active
 				&:after
@@ -59,6 +63,9 @@ header
 						bottom: -32px
 						right: 10px
 						left: 10px
+					@include lg
+						right: 9px
+						left: 9px
 .profile
 	&__wrapper
 		padding: 0
@@ -68,6 +75,14 @@ header
 		color: #fff
 		font: 400 1.611em/2.357em "OpenSans", sans-serif
 		text-decoration: none
+
+		@include dr
+			font-size: 1.2em
+			line-height: 1.5
+		@include lg
+			font-size: 1em
+	
+
 		&:focus, &:active
 			color: #fff
 			text-decoration: none
@@ -86,15 +101,14 @@ header
 				width: 20px
 				height: 20px
 				background-size: contain
+			@include lg
+				width: 15px
+				height: 15px
 
 		&:hover
 			color: #fff
 			cursor: pointer
 			text-decoration: none
-
-		@include dr
-			font-size: 1.2em
-			line-height: 1.5
 
 	&__avatar
 		border-radius: 50%
