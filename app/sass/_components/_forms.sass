@@ -114,6 +114,11 @@ input
 				&:hover
 					background: #fff
 					color: #ff8250
+
+				@include dr
+					font-size: 1.2em
+					padding: 0.5em 1em
+
 			&__file-input
 				margin: 0 5px
 				border: 1px solid #ededed
@@ -125,10 +130,20 @@ input
 				&:hover
 					background: #7a7a7a
 					color: #ededed
+
+				@include dr
+					font-size: 1.2em
+					padding: 0 0.6em
+
 			&__preferences
 				display: flex
 				align-items: center
 				padding-top: 20px
+
+				@include dr
+					padding: 0 
+					margin-top: -10px
+
 				.label-public
 					background: #7a7a7a
 					font-size: 0.8em
