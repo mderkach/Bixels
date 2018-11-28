@@ -12,11 +12,11 @@
     //   max-width: 365px
     //   margin: 0 auto
     //   font-size: 1em
-    // @include md
-    //   max-width: 100%
-    //   font-size: 2.7em
-    // @include xs
-    //   font-size: 1em
+    @include md
+      max-width: 100%
+      font-size: 2.3em
+    @include xs
+      font-size: 1.7em
 
   &_p
     color: #fff
@@ -29,10 +29,10 @@
     //   font-size: 0.8em
     // @include md
     //   font-size: 1.6em
-    // @include xs
-    //   font-size: 0.8em
-    //   br
-    //     display: none
+    @include xs
+      font-size: 1em
+      br
+        display: none
 
   &__create-account
     color: #fff
@@ -45,10 +45,10 @@
     //   font-size: 1.8em 
     // @include xl
     //   font-size: 1.2em
-    // @include md
-    //   font-size: 4.2em
-    // @include xs
-    //   font-size: 1.2em
+    @include md
+      font-size: 3.1em
+    @include xs
+      font-size: 2.2em
 
   &_create-project
     h1

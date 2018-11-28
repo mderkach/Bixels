@@ -83,12 +83,11 @@ button, a
 		border-radius: 10px
 		width: 100%
 		max-width: 360px
-		height: 60px
 		border: 2px solid $accent
 		background-color: $accent
-		margin: 2.8em auto 4.5em
+		margin: 1.4em auto 2.25em
 		color: #fff
-		font: 700 1.7em/1 "OpenSans", sans-serif
+		font: 700 1em/2 "OpenSans", sans-serif
 		text-align: center
 		text-transform: uppercase
 		&:hover
@@ -121,7 +120,7 @@ button, a
 		box-shadow: none
 		position: relative
 		display: block
-		margin: 3em auto 0 auto
+		margin: 1.5em auto 0 auto
 		white-space: inherit
 		text-align: center
 		width: 190px
@@ -177,8 +176,8 @@ button, a
 		// 			bottom: -10px
 		// 		&:nth-child(3)
 		// 			bottom: -20px
-		// @include md
-		// 	margin:  4.7em auto 5em auto
+		@include md
+			margin-bottom:  1em
 		// @include xs
 		// 	margin: 2em auto
 	
@@ -230,6 +229,7 @@ button, a
 		display: block	
 	@include xs
 		font-size: 0.8em
+		text-align: center
 
 .add-project
 	border-radius: 6px
