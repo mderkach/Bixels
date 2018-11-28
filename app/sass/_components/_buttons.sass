@@ -17,14 +17,14 @@ button, a
 			outline-offset: 0
 	&__login
 		appearance: none
-		margin: 0 15px
+		margin: 0 0.5em
 		border-radius: 10px
 		background-color: #fff
 		border: 2px solid #fff
 		color: $accent
 		text-transform: uppercase
-		font: 700 1.5em/1 "OpenSans", sans-serif
-		height: 50px
+		font: 700 1em/1.2 "OpenSans", sans-serif
+		//height: 50px
 		transition: all 0.4s
 		&:hover
 			border: 2px solid #fff
@@ -52,14 +52,15 @@ button, a
 			color: #fff
 			font: 700 1.5em/1 "OpenSans", sans-serif
 
-			// @include md
-			// 	display: block
-			// @include xs
-			// 	font-size: 0.8em
+			@include md
+				display: block
+			@include xs
+				font-size: 0.8em
 
 	&__password
 		&_reset
-			margin-left: 25px
+			margin-left: 1.5em
+			font-size: 0.8em
 			color: #fff
 			text-decoration: underline
 			&:hover, &:focus
@@ -106,14 +107,14 @@ button, a
 		// 	font-size: 0.8em
 		// 	height: 40px
 		// 	max-width: 260px
-		// @include md
-		// 	font-size: 1.7em
-		// 	max-width: 360px
-		// 	height: auto
-		// 	margin: 1em auto 2.3em
-		// @include xs
-		// 	font-size: 1em
-		// 	max-width: 230px
+		@include md
+			font-size: 1.7em
+			max-width: 360px
+			height: auto
+			margin: 1em auto 2.3em
+		@include xs
+			font-size: 1em
+			max-width: 230px
 
 	&-more
 		outline: none
@@ -224,11 +225,11 @@ button, a
 	&:focus
 		color: #fff
 
-	// @include md
-	// 	padding: 0
-	// 	display: block	
-	// @include xs
-	// 	font-size: 0.8em
+	@include md
+		padding: 0
+		display: block	
+	@include xs
+		font-size: 0.8em
 
 .add-project
 	display: block
