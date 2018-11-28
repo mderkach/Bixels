@@ -17,6 +17,8 @@ header
 .logo
 	&__wrapper
 
+		@include xl
+			padding-left: 5px
 		// @include md
 		// 	padding: 0
 			
@@ -73,7 +75,7 @@ header
 	&__name
 		padding: 0
 		color: #fff
-		font: 400 1em/1.15em "OpenSans", sans-serif
+		font: 400 1.5em/1.15em "OpenSans", sans-serif
 		text-decoration: none
 
 		// @include dr
@@ -92,8 +94,8 @@ header
 		.caret
       background-size: contain
       background-image: url('../img/icon-dropdown.png')
-      width: 13px
-      height: 13px
+      width: 18px
+      height: 18px
       margin-left: .255em
       border: none
       vertical-align: unset
@@ -151,6 +153,8 @@ header
 	&.navbar-expand-lg
 		&:before, &:after
 			display: none
+	&-profile
+		padding-right: 0
 
 .regular-navbar
   padding: 0
