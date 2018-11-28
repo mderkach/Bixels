@@ -33,7 +33,7 @@ header
 		&-link 
 			position: relative
 			color: #fff
-			font: 400 0.8em/1.15em "OpenSans", sans-serif
+			font: 400 1.2em/1.15em "OpenSans", sans-serif
 			padding: 0 0.45em !important
 
 			// @include dr
@@ -55,9 +55,9 @@ header
 					width: auto
 					max-width: 100%
 					background: #fff
-					bottom: -26px
-					right: 20px
-					left: 20px
+					bottom: -24px
+					right: 8px
+					left: 8px
 
 					// @include lr
 					// 	bottom: -32px
@@ -73,7 +73,7 @@ header
 	&__name
 		padding: 0
 		color: #fff
-		font: 400 0.8em/1.15em "OpenSans", sans-serif
+		font: 400 1em/1.15em "OpenSans", sans-serif
 		text-decoration: none
 
 		// @include dr
@@ -90,21 +90,13 @@ header
 			box-shadow: none
 			outline: none
 		.caret
-			background-image: url('../img/icon-dropdown.png')
-			width: 27px
-			height: 26px
-			margin-left: .255em
-			border: none
-			vertical-align: unset
-			// 
-			// @include dr
-			// 	width: 20px
-			// 	height: 20px
-			// 	background-size: contain
-			// @include lg
-			// 	width: 15px
-			// 	height: 15px
-
+      background-size: contain
+      background-image: url('../img/icon-dropdown.png')
+      width: 13px
+      height: 13px
+      margin-left: .255em
+      border: none
+      vertical-align: unset
 		&:hover
 			color: #fff
 			cursor: pointer
@@ -125,7 +117,7 @@ header
 		color: #fff
 		left: auto
 		right: 0
-		top: 80px
+		top: 48px
 		.dropdown
 			&-item
 				color: #fff
@@ -164,10 +156,8 @@ header
 	// 		padding: 0
 
 .regular-navbar
-	padding: 0
-	&.navbar-collapse
-		display: flex!important
-		align-items: center
-		flex-direction: row
-		&:before, &:after
-			display: none
+  padding: 0
+  display: flex
+  align-items: center
+  flex-direction: row
+  justify-content: space-between
