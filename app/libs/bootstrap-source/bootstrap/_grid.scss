@@ -22,18 +22,18 @@
   @media (min-width: $screen-xl-min) {
     width: $container-xl;
   }
-  @media (min-width: $screen-lr-min) {
-    width: $container-lr;
-  } 
-  @media (min-width: $screen-lw-min) {
-    width: $container-lw;
-  } 
-  @media (min-width: $screen-dr-min) {
-    width: $container-dr;
-  } 
-  @media (min-width: $screen-dw-min) {
-    width: $container-dw;
-  } 
+  // @media (min-width: $screen-lr-min) {
+  //   width: $container-lr;
+  // } 
+  // @media (min-width: $screen-lw-min) {
+  //   width: $container-lw;
+  // } 
+  // @media (min-width: $screen-dr-min) {
+  //   width: $container-dr;
+  // } 
+  // @media (min-width: $screen-dw-min) {
+  //   width: $container-dw;
+  // } 
 }
 
 
@@ -102,18 +102,18 @@
   @include make-grid(xl);
 }
 
-@media (min-width: $screen-lr-min) {
-  @include make-grid(lr);
-}
+// @media (min-width: $screen-lr-min) {
+//   @include make-grid(lr);
+// }
 
-@media (min-width: $screen-lw-min) {
-  @include make-grid(lw);
-}
+// @media (min-width: $screen-lw-min) {
+//   @include make-grid(lw);
+// }
 
-@media (min-width: $screen-dr-min) {
-  @include make-grid(dr);
-}
+// @media (min-width: $screen-dr-min) {
+//   @include make-grid(dr);
+// }
 
-@media (min-width: $screen-lw-min) {
-  @include make-grid(dw);
-}
+// @media (min-width: $screen-lw-min) {
+//   @include make-grid(dw);
+// }

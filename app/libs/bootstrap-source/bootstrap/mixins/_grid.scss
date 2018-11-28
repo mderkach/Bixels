@@ -148,110 +148,110 @@
   }
 }
 
-@mixin make-lr-column($columns, $gutter: $grid-gutter-width) {
-  position: relative;
-  min-height: 1px;
-  padding-left:  ($gutter / 2);
-  padding-right: ($gutter / 2);
+// @mixin make-lr-column($columns, $gutter: $grid-gutter-width) {
+//   position: relative;
+//   min-height: 1px;
+//   padding-left:  ($gutter / 2);
+//   padding-right: ($gutter / 2);
 
-  @media (min-width: $screen-lr-min) {
-    float: left;
-    width: percentage(($columns / $grid-columns));
-  }
-}
-@mixin make-lr-column-offset($columns) {
-  @media (min-width: $screen-lr-min) {
-    margin-left: percentage(($columns / $grid-columns));
-  }
-}
-@mixin make-lr-column-push($columns) {
-  @media (min-width: $screen-lr-min) {
-    left: percentage(($columns / $grid-columns));
-  }
-}
-@mixin make-lr-column-pull($columns) {
-  @media (min-width: $screen-xl-min) {
-    right: percentage(($columns / $grid-columns));
-  }
-}
+//   @media (min-width: $screen-lr-min) {
+//     float: left;
+//     width: percentage(($columns / $grid-columns));
+//   }
+// }
+// @mixin make-lr-column-offset($columns) {
+//   @media (min-width: $screen-lr-min) {
+//     margin-left: percentage(($columns / $grid-columns));
+//   }
+// }
+// @mixin make-lr-column-push($columns) {
+//   @media (min-width: $screen-lr-min) {
+//     left: percentage(($columns / $grid-columns));
+//   }
+// }
+// @mixin make-lr-column-pull($columns) {
+//   @media (min-width: $screen-xl-min) {
+//     right: percentage(($columns / $grid-columns));
+//   }
+// }
 
-@mixin make-lw-column($columns, $gutter: $grid-gutter-width) {
-  position: relative;
-  min-height: 1px;
-  padding-left:  ($gutter / 2);
-  padding-right: ($gutter / 2);
+// @mixin make-lw-column($columns, $gutter: $grid-gutter-width) {
+//   position: relative;
+//   min-height: 1px;
+//   padding-left:  ($gutter / 2);
+//   padding-right: ($gutter / 2);
 
-  @media (min-width: $screen-lw-min) {
-    float: left;
-    width: percentage(($columns / $grid-columns));
-  }
-}
-@mixin make-lw-column-offset($columns) {
-  @media (min-width: $screen-lw-min) {
-    margin-left: percentage(($columns / $grid-columns));
-  }
-}
-@mixin make-lw-column-push($columns) {
-  @media (min-width: $screen-lw-min) {
-    left: percentage(($columns / $grid-columns));
-  }
-}
-@mixin make-lw-column-pull($columns) {
-  @media (min-width: $screen-xl-min) {
-    right: percentage(($columns / $grid-columns));
-  }
-}
+//   @media (min-width: $screen-lw-min) {
+//     float: left;
+//     width: percentage(($columns / $grid-columns));
+//   }
+// }
+// @mixin make-lw-column-offset($columns) {
+//   @media (min-width: $screen-lw-min) {
+//     margin-left: percentage(($columns / $grid-columns));
+//   }
+// }
+// @mixin make-lw-column-push($columns) {
+//   @media (min-width: $screen-lw-min) {
+//     left: percentage(($columns / $grid-columns));
+//   }
+// }
+// @mixin make-lw-column-pull($columns) {
+//   @media (min-width: $screen-xl-min) {
+//     right: percentage(($columns / $grid-columns));
+//   }
+// }
 
-@mixin make-dr-column($columns, $gutter: $grid-gutter-width) {
-  position: relative;
-  min-height: 1px;
-  padding-left:  ($gutter / 2);
-  padding-right: ($gutter / 2);
+// @mixin make-dr-column($columns, $gutter: $grid-gutter-width) {
+//   position: relative;
+//   min-height: 1px;
+//   padding-left:  ($gutter / 2);
+//   padding-right: ($gutter / 2);
 
-  @media (min-width: $screen-dr-min) {
-    float: left;
-    width: percentage(($columns / $grid-columns));
-  }
-}
-@mixin make-dr-column-offset($columns) {
-  @media (min-width: $screen-dr-min) {
-    margin-left: percentage(($columns / $grid-columns));
-  }
-}
-@mixin make-dr-column-push($columns) {
-  @media (min-width: $screen-dr-min) {
-    left: percentage(($columns / $grid-columns));
-  }
-}
-@mixin make-dr-column-pull($columns) {
-  @media (min-width: $screen-xl-min) {
-    right: percentage(($columns / $grid-columns));
-  }
-}
+//   @media (min-width: $screen-dr-min) {
+//     float: left;
+//     width: percentage(($columns / $grid-columns));
+//   }
+// }
+// @mixin make-dr-column-offset($columns) {
+//   @media (min-width: $screen-dr-min) {
+//     margin-left: percentage(($columns / $grid-columns));
+//   }
+// }
+// @mixin make-dr-column-push($columns) {
+//   @media (min-width: $screen-dr-min) {
+//     left: percentage(($columns / $grid-columns));
+//   }
+// }
+// @mixin make-dr-column-pull($columns) {
+//   @media (min-width: $screen-xl-min) {
+//     right: percentage(($columns / $grid-columns));
+//   }
+// }
 
-@mixin make-dw-column($columns, $gutter: $grid-gutter-width) {
-  position: relative;
-  min-height: 1px;
-  padding-left:  ($gutter / 2);
-  padding-right: ($gutter / 2);
+// @mixin make-dw-column($columns, $gutter: $grid-gutter-width) {
+//   position: relative;
+//   min-height: 1px;
+//   padding-left:  ($gutter / 2);
+//   padding-right: ($gutter / 2);
 
-  @media (min-width: $screen-dw-min) {
-    float: left;
-    width: percentage(($columns / $grid-columns));
-  }
-}
-@mixin make-dw-column-offset($columns) {
-  @media (min-width: $screen-dw-min) {
-    margin-left: percentage(($columns / $grid-columns));
-  }
-}
-@mixin make-dw-column-push($columns) {
-  @media (min-width: $screen-dw-min) {
-    left: percentage(($columns / $grid-columns));
-  }
-}
-@mixin make-dw-column-pull($columns) {
-  @media (min-width: $screen-xl-min) {
-    right: percentage(($columns / $grid-columns));
-  }
-}
+//   @media (min-width: $screen-dw-min) {
+//     float: left;
+//     width: percentage(($columns / $grid-columns));
+//   }
+// }
+// @mixin make-dw-column-offset($columns) {
+//   @media (min-width: $screen-dw-min) {
+//     margin-left: percentage(($columns / $grid-columns));
+//   }
+// }
+// @mixin make-dw-column-push($columns) {
+//   @media (min-width: $screen-dw-min) {
+//     left: percentage(($columns / $grid-columns));
+//   }
+// }
+// @mixin make-dw-column-pull($columns) {
+//   @media (min-width: $screen-xl-min) {
+//     right: percentage(($columns / $grid-columns));
+//   }
+// }
