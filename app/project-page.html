@@ -172,7 +172,7 @@
 									</button>
 								</div>
 								<div class="pull-right quick-post__preferences">
-									<span class="label label-info label-public">Публичное</span>
+									<span class="label label-info label-public">Public</span>
 									<ul class="nav nav-pills preferences">
 										<li class="dropdown preferences__dropdown">
 											<a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-label="Toggle post menu" aria-haspopup="true"
@@ -417,7 +417,8 @@
 					<!-- events -->
 					<div class="panel panel__events" id="events">
 						<div class="panel-header events__header">
-							<i class="far fa-calendar-alt"></i> Events
+							<img src="./img/svg/calendar.svg" alt="">
+							Events
 						</div>
 						<div class="panel events-nav__wrapper">
 							<nav class="panel-body nav events-nav media-list">
@@ -452,23 +453,26 @@
 					<!-- videos -->
 					<div class="panel panel__events" id="videos">
 						<div class="panel-header events__header">
-							<i class="fab fa-youtube"></i> Videos
+							<img src="./img/svg/video.svg" alt="">
+							Videos
 						</div>
 						<div class="panel events-nav__wrapper">
 							<ul class="panel-body media-list video-list">
 								<li class="list-item col-xs-12">
-									<video class="list-item-video" controls>
+									<video class="list-item-video" poster="./img/poster.png">
 										<source src="#" type="video/mp4">
 										<source src="#" type="video/ogg">
 										Your browser does not support the video tag.
 									</video>
+									<button class="btn btn__play"></button>
 								</li>
 								<li class="list-item col-xs-12">
-									<video class="list-item-video" controls>
+									<video class="list-item-video" poster="./img/poster.png">
 										<source src="#" type="video/mp4">
 										<source src="#" type="video/ogg">
-										Your browser does not support the video tag.
+										Your browser does not support the video tag.-
 									</video>
+									<button class="btn btn__play"></button>
 								</li>
 							</ul>
 						</div>
@@ -477,7 +481,8 @@
 					<!-- photo -->
 					<div class="panel panel__events" id="photos">
 						<div class="panel-header events__header">
-							<i class="fas fa-images"></i> Photos
+							<img src="./img/svg/photos.svg" alt="">
+							Photos
 						</div>
 						<ul class="panel-body media-list photos-list">
 							<li class="col-lg-6 col-xs-12">
