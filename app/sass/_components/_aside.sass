@@ -16,12 +16,12 @@
     position: relative
     padding-left: 15px
     color: #555555
-    font: 600 1em/2 "Open Sans",sans-serif
+    font: 600 1.3em/1.65 "Open Sans",sans-serif
     .nav-link__icon
       width: 100%
       height: auto
-      max-width: 16px
-      max-height: 16px
+      max-width: 24px
+      max-height: 24px
 
     // @include dr
     //   font-size: 1em
@@ -82,6 +82,10 @@
     align-items: center
     justify-content: space-around
   
+.panel__events
+  &:not(#events)
+    .events__header
+      padding-bottom: 0
 
 .panel
   border-radius: 10px
@@ -93,11 +97,11 @@
         align-items: flex-start
         color: #768a8f
         padding: 1.2em 0.95em
-        font: 400 0.8em/2em "Open Sans",sans-serif
+        font: 400 1.2em/1.65em "Open Sans",sans-serif
         text-transform: uppercase
         img
           width: 100%
-          max-width: 19px
+          max-width: 24px
           margin-right: 0.5em
 
         // @include dr
@@ -108,6 +112,7 @@
 
       &-nav
         padding: 0
+        border-bottom: 2px solid #f7f7f7
         &_link
           padding: 1em 0 1.4em 1em
           display: block
@@ -128,6 +133,10 @@
                 font: 700 1em "Open Sans",sans-serif
                 text-transform: uppercase
 
+                &:hover
+                  text-decoration: underline
+                  cursor: pointer
+
                 // @include dr
                 //   font-size: 1em
                 // @include dr
@@ -141,6 +150,10 @@
                 //   font-size: 0.8em
                 // @include lr
                 //   font-size: 0.6em
+
+          &:hover
+            text-decoration: none
+            cursor: default
 
 .video-list
   .list-item
