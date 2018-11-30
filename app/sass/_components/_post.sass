@@ -70,3 +70,32 @@
 
 .nav .open>.chevron-down, .nav .open>.chevron-down:focus, .nav .open>.chevron-down:hover
   background-color: transparent
+
+.comment-container
+  padding: 12px 0 0
+  margin-bottom: 0
+  background: transparent
+  border: none
+  box-shadow: none
+  .comment
+    margin: 12px 0
+    &_avatar
+      width: 35px
+      height: 35px
+    &__media
+      .media
+        &-heading
+          margin-bottom: 0
+          a
+            color: $accent
+            text-decoration: none
+            font: 700 0.8em/1.25 "OpenSans", sans-serif
+
+        &-body
+          .time
+            color: #768a8f
+            font: 400 0.8em/1.25 "OpenSans", sans-serif
+            margin-bottom: 0
+    &-message
+      margin-top: 1em
+      font: 400 0.9em/1.5 "OpenSans", sans-serif

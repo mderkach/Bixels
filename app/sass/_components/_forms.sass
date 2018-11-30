@@ -24,6 +24,10 @@ input
 	// 	font-size: 10px
 	// 	max-width: 175px
 
+.form-control
+	&:focus
+		box-shadow: none
+
 .form
 	&__header
 		display: flex
@@ -154,3 +158,38 @@ input
 						padding: 5px 10px
 						a
 							color: #d1d1d1
+
+	&__comment
+		position: relative
+		.comment
+			&-buttons
+				position: absolute
+				top: 0
+				right: 0
+			&__input
+				box-shadow: none
+				border: 1px solid #ededed
+				border-radius: 6px
+				&:focus
+					border-color: #ededed
+			&__submit
+				margin: 4px
+				padding: 0.4em 2em
+				border-color: #e4e8e9
+				background-color: #e4e8e9
+				color: #768a8f
+				font: 600 0.8em/1.5 "OpenSans",sans-serif
+				text-transform: uppercase
+				border-color: #e4e8e9
+				&:hover
+					border-color: #768a8f
+					background-color: #768a8f
+					color: #e4e8e9
+				&:active
+					background-color: #768a8f
+					color: #e4e8e9
+					border-color: #768a8f
+			&__upload
+				border: none
+				margin: 2px
+				padding: 4px 12px

@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+	<!-- <base href="/"> -->
+
+	<title>Activity page</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- Template Basic Images Start -->
+	<meta property="og:image" content="">
+	<link rel="icon" href="#">
+	<link rel="apple-touch-icon" sizes="180x180" href="#">
+	<!-- Template Basic Images End -->
+
+	<!-- Custom Browsers Color Start -->
+	<meta name="theme-color" content="#ff681d">
+	<!-- Custom Browsers Color End -->
+
+	<link rel="stylesheet" href="css/main.min.css">
+	<!-- INCLUDE FONT AWESOME -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+	 crossorigin="anonymous">
+	<!-- INCLUDE FONT AWESOME -->
+</head>
+
+<body>
+	<!-- HEADER -->
+	<header class="regular-header">
+		<div class="container">
+			<div class="row">
+				<nav class="p-xl-0 col-xs-12 navbar navbar-expand-lg">
+					<a class="p-md-0 col-lg-2 col-xs-4 logo__wrapper" href="#">
+						<img src="./img/logo.png" alt="" class="logo__img img-responsive">
+					</a>
+					<!-- REGULAR NAVBAR -->
+					<div class="regular-navbar col-lg-5">
+						<nav class="navbar-nav main-nav">
+							<a class="nav-item nav-link active" href="#">Activity</a>
+							<a class="nav-item nav-link" href="#">Calendar</a>
+							<a class="nav-item nav-link" href="#">Project</a>
+						</nav>
+						<a href="#" role="button" class="add-project"><i class="fas fa-plus"></i>ADD NEW PROJECT</a>
+					</div>
+					<a href="#" class="search"><i class="fas fa-search"></i></a>
+					<div class="collapse navbar-collapse navbar-profile">
+						<ul class="navbar-nav profile__wrapper">
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle profile__name" href="#" data-toggle="dropdown" aria-haspopup="true"
+								 aria-expanded="false">
+									Etherium Project
+									<img class="profile__avatar" src="./img/default_avatar.jpg" alt="">
+									<span class="caret"></span>
+								</a>
+								<div class="dropdown-menu profile__dropdown">
+									<a class="dropdown-item" href="#"><i class="fas fa-user"></i> My profile</a>
+									<a class="dropdown-item" href="#"><i class="fas fa-edit"></i>Account settings</a>
+									<div class="dropdown-divider"></div>
+									<a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt"></i>Log Out</a>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<!-- REGULAR NAVBAR -->
+				</nav>
+			</div>
+		</div>
+	</header>
+	<!-- HEADER -->
+	<!-- LAYOUT -->
+	<div id="layout-content">
+		<div class="container pre-content__wrapper">
+			<div class="row flexible-row">
+				<!-- container for side content -->
+				<aside class="aside_left">
+					<!-- NAV ASIDE -->
+					<div class="panel aside-nav__wrapper" id="navigation">
+						<nav class="panel-body nav aside-nav">
+							<a class="nav-link aside-nav_link" href="#">
+								<img class="nav-link__icon" src="./img/svg/video.svg" alt="">
+								Videos
+							</a>
+							<a class="nav-link aside-nav_link" href="#">
+								<img class="nav-link__icon" src="./img/svg/whitepaper.svg" alt="">
+								White Paper</a>
+							<a class="nav-link aside-nav_link active" href="#">
+								<img class="nav-link__icon" src="./img/svg/activity.svg" alt="">
+								Events</a>
+							<a class="nav-link aside-nav_link" href="#">
+								<img class="nav-link__icon" src="./img/svg/information.svg" alt="">
+								Information</a>
+							<a class="nav-link aside-nav_link" href="#">
+								<img class="nav-link__icon" src="./img/svg/suppurt.svg" alt="">
+								Supports</a>
+							<a class="nav-link aside-nav_link" href="#">
+								<img class="nav-link__icon" src="./img/svg/settings.svg" alt="">
+								Settings</a>
+							<a class="nav-link aside-nav_link" href="#">
+								<img class="nav-link__icon" src="./img/svg/calendar.svg" alt="">
+								Calendar</a>
+							<a class="nav-link aside-nav_link" href="#">
+								<img class="nav-link__icon" src="./img/svg/files.svg" alt="">
+								File</a>
+							<a class="nav-link aside-nav_link" href="#">
+								<img class="nav-link__icon" src="./img/svg/photos.svg" alt="">
+								Photo</a>
+						</nav>
+					</div>
+					<!-- NAV ASIDE -->
+					<div class="aside-info__wrapper aside-info_project-registration">
+						<div class="aside-info__body">
+							<p>Ad your own project now!</p>
+							<img src="./img/icon-cube-aside.png" alt="">
+						</div>
+					</div>
+					<!-- canvas -->
+					<canvas class="bixel-can" style="height: 500px; background: lightgray" width="300" height="500"></canvas>
+					<!-- canvas -->
+				</aside>
+				<!-- container for side content -->
+				<!-- container for posts -->
+				<main role="main" class="main-content-flow">
+					<!-- Sample post -->
+					<div class="col-xs-12 panel post">
+						<div class="panel-head post__head">
+							<!-- post header -->
+							<div class="media">
+								<div class="media-left">
+									<a href="#">
+										<img class="media-object post__avatar" src="./img/default_avatar.jpg" alt="">
+									</a>
+								</div>
+								<div class="media-body">
+									<h4 class="media-heading">
+										<a href="#">Etherium project</a>
+									</h4>
+									<p class="time">25 sep. 2018 г.</p>
+								</div>
+								<div class="media-right">
+									<ul class="nav nav-pills preferences">
+										<li class="dropdown">
+											<a class="dropdown-toggle chevron-down" data-toggle="dropdown" href="#" aria-label="Toggle stream entry menu"
+											 aria-haspopup="true">
+												<i class="fa fa-angle-down"></i>
+											</a>
+											<ul class="dropdown-menu pull-right">
+												<li>
+													<!-- load modal confirm widget -->
+													<a href="#" data-action-click="delete">
+														<i class="fa fa-trash-o"></i> Delete
+													</a>
+												</li>
+												<li>
+													<a href="#" class="stream-entry-edit-link" data-action-click="edit" data-action-url="/u/adminadmin/post/post/edit?id=25">
+														<i class="fa fa-pencil"></i> Edit
+													</a>
+													<a href="#" class="stream-entry-cancel-edit-link" data-action-click="cancelEdit" style="display:none;">
+														<i class="fa fa-pencil"></i> Cancel Edit
+													</a>
+												</li>
+												<li>
+													<a href="#" class="makePriavteLink" data-action-click="toggleVisibility" data-action-url="/content/content/toggle-visibility?id=256">
+														<i class="fa fa-lock makePrivate"></i> Make private
+													</a>
+												</li>
+												<li>
+													<a id="notification_off_256" class="turnOffNotifications" href="#" style="display: block">
+														<i class="fa fa-bell-slash-o"></i> Disable notifications
+													</a>
+													<a id="notification_on_256" class="turnOnNotifications" href="#" style="display: none"><i class="fa fa-bell-o"></i>Enable
+														notifications
+													</a>
+												</li>
+												<li>
+													<a href="#" data-action-click="permalink" data-content-permalink="http://putinka.beget.tech/content/perma?id=256">
+														<i class="fa fa-link"></i>Permanent link
+													</a>
+												</li>
+												<li>
+													<a href="#" data-action-click="pin" data-action-url="/content/content/pin?id=256">
+														<i class="fa fa-arrow-up"></i>Pin to top
+													</a>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<!-- post header -->
+						</div>
+						<!-- post content -->
+						<div class="panel-body post__body">
+							<p>
+								One of the important issues that has been brought up over the course of the Olympic stress-net release is the
+								large amount of data that clients are required to store; over little more than three months of operation, and
+								particularly during the last month, the amount of data in each Ethereum client’s blockchain folder has
+								ballooned to an impressive 10-40 gigabytes, depending on which client you are using and whether or not
+								compression is enabled. Although it is important to note that this is indeed a stress test scenario where users
+								are incentivized to dump transactions on the blockchain paying only the free test-ether as a transaction fee,
+								and transaction throughput levels are thus several times higher than Bitcoin, it is nevertheless a legitimate
+								concern for users, who in many cases do not have hundreds of gigabytes to spare on storing other people’s
+								transaction histories.
+								First of all, let us begin by exploring why the current Ethereum client database is so large. Ethereum, unlike
+								Bitcoin, has the property that every block contains something called the “state root”: the root hash of a
+								specialized kind of Merkle tree which stores the entire state of the system: all account balances, contract
+								storage, contract code and account nonces are inside.
+							</p>
+						</div>
+						<!-- post content -->
+						<!-- post footer -->
+						<div class="panel-body post__footer">
+							<div class="media-left footer-body">
+								<div class="post__stat" id="likes">
+									<p class="stat__descr"><i class="fas fa-thumbs-up"></i> Likes:</p>
+									<p class="stat__count">5</p>
+								</div>
+								<div class="post__stat" id="comments">
+									<p class="stat__descr"><i class="fas fa-comment-dots"></i> Comments:</p>
+									<p class="stat__count">5</p>
+								</div>
+							</div>
+						</div>
+						<!-- post footer -->
+						<!-- Comment container -->
+						<div class="well well-small comment-container" id="comment_humhubmodulescfilesmodelsFile_1">
+							<!-- comment -->
+							<div class="comment " id="comments_area_humhubmodulescfilesmodelsFile_1">
+								<div class="media comment__media" id="comment_14" data-action-component="comment.Comment"
+								 data-content-delete-url="/comment/comment/delete?contentModel=humhub%5Cmodules%5Ccfiles%5Cmodels%5CFile&amp;contentId=1&amp;id=14">
+									<div class="comment-entry-loader pull-right"></div>
+									<div class="media-left">
+										<a href="/u/adminadmin/">
+											<img class="comment_avatar img-rounded" src="./img/default_avatar.jpg"></a>
+									</div>
+									<div class="media-body">
+										<h4 class="media-heading">
+											<a href="#">Etherium project</a>
+										</h4>
+										<p class="time">25 sep. 2018 г.</p>
+										<div class="content comment_edit_content" id="comment_editarea_14">
+											<div id="comment-message-14" class="comment-message" data-ui-markdown="" data-ui-show-more=""
+											 data-read-more-text="Read full comment...">
+												We have uploaded an updated pdf file with yellow paper. </div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- comment -->
+							<!-- comment -->
+							<div class="comment " id="comments_area_humhubmodulescfilesmodelsFile_1">
+								<div class="media comment__media" id="comment_14" data-action-component="comment.Comment"
+								 data-content-delete-url="/comment/comment/delete?contentModel=humhub%5Cmodules%5Ccfiles%5Cmodels%5CFile&amp;contentId=1&amp;id=14">
+									<div class="comment-entry-loader pull-right"></div>
+									<div class="media-left">
+										<a href="/u/adminadmin/">
+											<img class="comment_avatar img-rounded" src="./img/default_avatar.jpg"></a>
+									</div>
+									<div class="media-body">
+										<h4 class="media-heading">
+											<a href="#">Etherium project</a>
+										</h4>
+										<p class="time">25 sep. 2018 г.</p>
+										<div class="content comment_edit_content" id="comment_editarea_14">
+											<div id="comment-message-14" class="comment-message" data-ui-markdown="" data-ui-show-more=""
+											 data-read-more-text="Read full comment...">
+												We have uploaded an updated pdf file with yellow paper. </div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- comment -->
+							<!-- post comment -->
+							<div id="comment_create_form_humhubmodulescfilesmodelsFile_1" class="comment_create" data-ui-widget="comment.Form">
+								<form class="form__comment" action="#" method="post">
+									<input type="hidden" name="_csrf" value="_oFZl_eUwODzbAclKB1KJ94wh_BKGl2SHrpp8EhpDJLtn8Dmkh4f-oSVDSwLhJ6dbUSBfdeqN4pyDoiuC6iopQ==">
+									<input type="hidden" name="contentModel" value="humhub\modules\cfiles\models\File"> <input type="hidden" name="contentId"
+									 value="1">
+									<textarea id="newCommentForm_humhubmodulescfilesmodelsFile_1_input" class="atwho-input form-control humhub-ui-richtext"
+									 name="message" title="Add new comment" style="display:none;"></textarea>
+									<div id="newCommentForm_humhubmodulescfilesmodelsFile_1" class="comment__input atwho-input form-control humhub-ui-richtext atwho-placeholder"
+									 contenteditable="true" data-excludes="[]" data-includes="[]" data-mentioning-url="/search/search/mentioning"
+									 data-placeholder="Add new comment" data-ui-widget="ui.richtext.Richtext" data-ui-init="1" spellcheck="false">Add
+										new comment</div>
+									<div class="comment-buttons">
+										<span class="btn btn-default comment__upload" title="" data-placement="bottom" data-action-click="file.upload"
+										 data-action-target="#comment_create_upload_humhubmodulescfilesmodelsFile_1" data-original-title="Загрузить файлы">
+											<i class="fas fa-cloud-upload-alt"></i>
+											<input type="file" id="comment_create_upload_humhubmodulescfilesmodelsFile_1" name="files[]" multiple="multiple"
+											 title="Upload file" data-upload-url="" data-upload-drop-zone="#comment_create_form_humhubmodulescfilesmodelsFile_1"
+											 data-upload-progress="#comment_create_upload_progress_humhubmodulescfilesmodelsFile_1" data-upload-preview="#comment_create_upload_preview_humhubmodulescfilesmodelsFile_1"
+											 data-upload-form="" data-upload-single="" data-upload-submit-name="fileList[]" data-upload-hide-in-stream=""
+											 data-php-max-file-uploads="20" data-php-max-file-uploads-message="Sorry, you can only upload up to 20 files at once."
+											 data-max-number-of-files="50" data-max-number-of-files-message="This upload field only allows a maximum of 50 files."
+											 data-ui-widget="file.Upload" data-ui-init="1" style="display:none">
+										</span>
+										<button class="btn btn-info comment__submit" data-action-click="submit" data-action-url="/comment/comment/post"
+										 data-ui-loader="">Send</button>
+									</div>
+								</form>
+								<div id="comment_create_upload_progress_humhubmodulescfilesmodelsFile_1" style="display:none;margin:10px 0px;"
+								 class="progress">
+									<div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="0" aria-valuemin="0"
+									 aria-valuemax="100" style="width: 0%;"></div>
+								</div>
+								<div id="comment_create_upload_preview_humhubmodulescfilesmodelsFile_1" data-prevent-popover=""
+								 data-popover-position="right" data-file-edit="1" data-hide-image-file-info="" data-ui-widget="file.Preview"
+								 style="margin-top: 10px; display: none;">
+									<ul class="files" style="list-style:none; margin:0;padding:0px;"></ul>
+								</div>
+							</div>
+							<!-- post comment -->
+						</div>
+						<!-- Comment container -->
+					</div>
+					<!-- Sample post -->
+					<!-- Sample post -->
+					<div class="col-xs-12 panel post">
+						<div class="panel-head post__head">
+							<!-- post header -->
+							<div class="media">
+								<div class="media-left">
+									<a href="#">
+										<img class="media-object post__avatar" src="./img/default_avatar.jpg" alt="">
+									</a>
+								</div>
+								<div class="media-body">
+									<h4 class="media-heading">
+										<a href="#">Etherium project</a>
+									</h4>
+									<p class="time">25 sep. 2018 г.</p>
+								</div>
+								<div class="media-right">
+									<ul class="nav nav-pills preferences">
+										<li class="dropdown">
+											<a class="dropdown-toggle chevron-down" data-toggle="dropdown" href="#" aria-label="Toggle stream entry menu"
+											 aria-haspopup="true">
+												<i class="fa fa-angle-down"></i>
+											</a>
+											<ul class="dropdown-menu pull-right">
+												<li>
+													<!-- load modal confirm widget -->
+													<a href="#" data-action-click="delete">
+														<i class="fa fa-trash-o"></i> Delete
+													</a>
+												</li>
+												<li>
+													<a href="#" class="stream-entry-edit-link" data-action-click="edit" data-action-url="/u/adminadmin/post/post/edit?id=25">
+														<i class="fa fa-pencil"></i> Edit
+													</a>
+													<a href="#" class="stream-entry-cancel-edit-link" data-action-click="cancelEdit" style="display:none;">
+														<i class="fa fa-pencil"></i> Cancel Edit
+													</a>
+												</li>
+												<li>
+													<a href="#" class="makePriavteLink" data-action-click="toggleVisibility" data-action-url="/content/content/toggle-visibility?id=256">
+														<i class="fa fa-lock makePrivate"></i> Make private
+													</a>
+												</li>
+												<li>
+													<a id="notification_off_256" class="turnOffNotifications" href="#" style="display: block">
+														<i class="fa fa-bell-slash-o"></i> Disable notifications
+													</a>
+													<a id="notification_on_256" class="turnOnNotifications" href="#" style="display: none"><i class="fa fa-bell-o"></i>Enable
+														notifications
+													</a>
+												</li>
+												<li>
+													<a href="#" data-action-click="permalink" data-content-permalink="http://putinka.beget.tech/content/perma?id=256">
+														<i class="fa fa-link"></i>Permanent link
+													</a>
+												</li>
+												<li>
+													<a href="#" data-action-click="pin" data-action-url="/content/content/pin?id=256">
+														<i class="fa fa-arrow-up"></i>Pin to top
+													</a>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<!-- post header -->
+						</div>
+						<!-- post content -->
+						<div class="panel-body post__body">
+							<p>
+								One of the important issues that has been brought up over the course of the Olympic stress-net release is the
+								large amount of data that clients are required to store; over little more than three months of operation, and
+								particularly during the last month, the amount of data in each Ethereum client’s blockchain folder has
+								ballooned to an impressive 10-40 gigabytes, depending on which client you are using and whether or not
+								compression is enabled. Although it is important to note that this is indeed a stress test scenario where users
+								are incentivized to dump transactions on the blockchain paying only the free test-ether as a transaction fee,
+								and transaction throughput levels are thus several times higher than Bitcoin, it is nevertheless a legitimate
+								concern for users, who in many cases do not have hundreds of gigabytes to spare on storing other people’s
+								transaction histories.
+								First of all, let us begin by exploring why the current Ethereum client database is so large. Ethereum, unlike
+								Bitcoin, has the property that every block contains something called the “state root”: the root hash of a
+								specialized kind of Merkle tree which stores the entire state of the system: all account balances, contract
+								storage, contract code and account nonces are inside.
+							</p>
+						</div>
+						<!-- post content -->
+						<!-- post footer -->
+						<div class="panel-body post__footer">
+							<div class="media-left footer-body">
+								<div class="post__stat" id="likes">
+									<p class="stat__descr"><i class="fas fa-thumbs-up"></i> Likes:</p>
+									<p class="stat__count">5</p>
+								</div>
+								<div class="post__stat" id="comments">
+									<p class="stat__descr"><i class="fas fa-comment-dots"></i> Comments:</p>
+									<p class="stat__count">5</p>
+								</div>
+							</div>
+						</div>
+						<!-- post footer -->
+					</div>
+					<!-- Sample post -->
+					<!-- load more -->
+					<button class="col-dr-2 col-xs-4 btn btn__post-more">
+						<i class="fa fa-angle-down"></i>
+						Show <span id="posts-count">12</span> more
+					</button>
+					<!-- load more -->
+				</main>
+				<!-- container for posts -->
+				<!-- container for side content -->
+				<aside class="aside_right">
+					<!-- events -->
+					<div class="panel panel__events" id="events">
+						<div class="panel-header events__header">
+							<img src="./img/svg/calendar.svg" alt="">
+							Events
+						</div>
+						<div class="panel events-nav__wrapper">
+							<nav class="panel-body nav events-nav media-list">
+								<a href="#" class="nav-link events-nav_link">
+									<div class="media events-media">
+										<div class="media-body events-media-body text-break">
+											<strong>Token Economy event (Berlin)</strong>
+											<span class="time">8 oct. 2018 y.</span>
+										</div>
+									</div>
+								</a>
+								<a href="#" class="nav-link events-nav_link">
+									<div class="media events-media">
+										<div class="media-body events-media-body text-break">
+											<strong>Token Economy event (Berlin)</strong>
+											<span class="time">8 oct. 2018 y.</span>
+										</div>
+									</div>
+								</a>
+								<a href="#" class="nav-link events-nav_link">
+									<div class="media events-media">
+										<div class="media-body events-media-body text-break">
+											<strong>Token Economy event (Berlin)</strong>
+											<span class="time">8 oct. 2018 y.</span>
+										</div>
+									</div>
+								</a>
+							</nav>
+						</div>
+						<div class="panel__footer">
+							<button class="btn btn__all-events">all events</button>
+						</div>
+					</div>
+					<!-- events -->
+					<!-- videos -->
+					<div class="panel panel__events" id="videos">
+						<div class="panel-header events__header">
+							<img src="./img/svg/video.svg" alt="">
+							Videos
+						</div>
+						<div class="panel events-nav__wrapper">
+							<ul class="panel-body media-list video-list">
+								<li class="list-item col-xs-12">
+									<video class="list-item-video" poster="./img/poster.png">
+										<source src="#" type="video/mp4">
+										<source src="#" type="video/ogg">
+										Your browser does not support the video tag.
+									</video>
+									<button class="btn btn__play"></button>
+								</li>
+								<li class="list-item col-xs-12">
+									<video class="list-item-video" poster="./img/poster.png">
+										<source src="#" type="video/mp4">
+										<source src="#" type="video/ogg">
+										Your browser does not support the video tag.-
+									</video>
+									<button class="btn btn__play"></button>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!-- videos -->
+					<!-- photo -->
+					<div class="panel panel__events" id="photos">
+						<div class="panel-header events__header">
+							<img src="./img/svg/photos.svg" alt="">
+							Photos
+						</div>
+						<ul class="panel-body media-list photos-list">
+							<li class="col-lg-6 col-xs-12">
+								<img src="./img/exmple-photo.png" alt="" class="photos-item img-responsive">
+							</li>
+							<li class="col-lg-6 col-xs-12">
+								<img src="./img/example-photo-2.png" alt="" class="photos-item img-responsive">
+							</li>
+							<li class="col-lg-6 col-xs-12">
+								<img src="./img/example-photo-2.png" alt="" class="photos-item img-responsive">
+							</li>
+							<li class="col-lg-6 col-xs-12">
+								<img src="./img/exmple-photo.png" alt="" class="photos-item img-responsive">
+							</li>
+						</ul>
+					</div>
+					<!-- photo -->
+				</aside>
+				<!-- container for side content -->
+			</div>
+		</div>
+	</div>
+
+
+	<script src="js/scripts.min.js"></script>
+
+</body>
+
+</html>
