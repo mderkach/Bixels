@@ -85,6 +85,34 @@
 								<img src="./img//default-avatar_big.png" alt="" class="img-responsive">
 							</div>
 							<h2 class="profile__name">Etherium Project</h2>
+							<!-- BUTTONS FROM DONOR -->
+							<div class="image-upload-buttons" id="banner-image-upload-buttons" style="display: block;">
+								<a href="#" onclick="javascript:$('#bannerfileupload input').click();" class="btn btn-info btn-sm" aria-label="Upload profile banner">
+									<i class="fas fa-cloud-upload-alt"></i>
+								</a>
+								<a id="banner-image-upload-edit-button" style="" href="/user/image/crop?userGuid=626a3e33-4d7b-45be-ab21-87a1da1ba907&amp;type=banner"
+								 class="btn btn-info btn-sm" data-target="#globalModal" data-backdrop="static" aria-label="Crop profile background">
+									<i class="fa fa-edit"></i>
+								</a>
+								<!-- create normal link element -->
+								<a id="deleteLinkPost_modal_bannerimagedelete" aria-label="Delete profile banner" class="btn btn-danger btn-sm "
+								 style="" href="#" data-toggle="modal" data-target="#confirmModal_modal_bannerimagedelete">
+									<i class="fa fa-times"></i> </a>
+								<!-- start: Confirm modal -->
+								<script>
+									$(function () {
+										// Move modal to body
+										$('#confirmModal_modal_bannerimagedelete').appendTo(document.body);
+									});
+									$('#confirmModal_modal_bannerimagedelete').on('shown.bs.modal', function (e) {
+										// Execute optional JavaScript code, when modal is showing
+										// Remove standard modal with
+										$('#confirmModal_modal_bannerimagedelete .modal-dialog').attr('style', '');
+									});
+								</script>
+								<!-- end: Confirm modal -->
+							</div>
+							<!-- BUTTONS FROM DONOR -->
 						</div>
 					</div>
 					<div class="panel-body profile__body">
