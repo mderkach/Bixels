@@ -109,6 +109,8 @@ input
 			height: auto
 			&::placeholder
 				font: 400 1.3em/2 "OpenSans", sans-serif
+			&:focus
+				border:	2px solid $accent
 		.quick-post
 			&__submit
 				border-radius: 7px
@@ -168,10 +170,11 @@ input
 				right: 0
 			&__input
 				box-shadow: none
-				border: 1px solid #ededed
+				border: 2px solid #ededed
 				border-radius: 6px
 				&:focus
-					border-color: #ededed
+					border: 2px solid $accent
+					//box-shadow: inset 0 1px 1px $accent, 0 0 8px $accent
 			&__submit
 				margin: 4px
 				padding: 0.4em 2em
@@ -190,6 +193,9 @@ input
 					color: #e4e8e9
 					border-color: #768a8f
 			&__upload
+				color: #e4e8e9
 				border: none
 				margin: 2px
 				padding: 4px 12px
+				&:hover
+					color: #768a8f

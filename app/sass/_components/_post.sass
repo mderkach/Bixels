@@ -44,6 +44,12 @@
       //   font-size: 1em
       //   padding: 0
 
+    .preferences
+      .dropdown-menu
+        li
+          i 
+            margin-right: 0.6em
+ 
   &__body
     padding-left: 0
     padding-right: 0
@@ -67,6 +73,42 @@
         justify-content: space-between
         align-items: center
         margin-right: 40px
+        .stat__descr_icon
+          display: inline-block
+          width: 28px
+
+  &_event
+    border-left: 6px solid $accent
+    padding-left: 2em
+    .post__avatar
+      width: 40px
+    h4
+      margin-bottom: 0
+      font-size: 1em
+      a
+        color: $text
+        font: 700 1em/1.5 "OpenSans", sans-serif
+    .time
+      color: $accent
+    &_body
+       font: 400 1em/1.5 "OpenSans", sans-serif
+
+  &_file
+    border-left: 6px solid $accent
+    padding-left: 2em
+    .post__avatar
+      width: 40px
+    h4
+      margin-bottom: 0.8em
+      font-size: 1em
+      line-height: 1
+      a
+        color: $accent
+        font: 700 1em/1 "OpenSans", sans-serif
+        text-decoration: underline
+    .size
+      color: #cdd3d5
+      font: 600 1em/1 "OpenSans", sans-serif
 
 .nav .open>.chevron-down, .nav .open>.chevron-down:focus, .nav .open>.chevron-down:hover
   background-color: transparent
