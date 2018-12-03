@@ -2,33 +2,24 @@ header
 	background-color: $accent
 	box-shadow: $box-shadow
 	padding: $em*1.45/2 0
+	
 
-	// @include dr
-	// 	padding: $em*1.2 0
-	// @include xl
-	// 	padding: $em 0
+	.navbar
+		@media (max-width: 640px)
+			padding: 0 10px
 
 .regular-header
 	padding: $em*1.111/2 0
 	
-	// @include lg
-	// 	padding: 1em 0
 
 .logo
 	&__wrapper
 
 		@include xxl
 			padding-left: 5px
-		// @include md
-		// 	padding: 0
+			
 			
 	&__img
-		//width: 125px
-
-		// @include lw
-		// 	width: 100%
-		// @include md
-		// 	width: 96%
 
 .main-nav
 	.nav

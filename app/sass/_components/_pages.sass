@@ -4,7 +4,7 @@
 		background: url("../img/bg_login.png") 100% no-repeat
 		background-size: cover
 	
-		@include md
+		@media (max-width: 768px)
 			background: url("../img/bg_login_mobile.png") 100% no-repeat
 
 	&__content
@@ -13,28 +13,10 @@
 				height: 92.4vh
 				padding: $em*3 0 $em*2.5 0
 
-				// @include dr
-				// 	padding: $em*3 0 $em*2.5 0
-				// @include lw
-				// 	padding: $em*1.5 0 $em*1.25 0
-				// @include md
-				// 	padding: $em*3.3 0 $em*0.5 0
-				// 	height: auto
 
 		.cube
 			margin: $em*2.5 auto 0 auto
 			width: 90%
-			// @include dr
-			// 	margin-top: $em*2
-			// 	max-width: 80%
-			// @include lw
-			// 	margin-top: $em
-			// 	max-width: 70%
-			// @include lr
-			// 	max-width: 65%
-			// @include xl
-			// 	margin: $em*3.3 auto 0 auto
-			// 	min-width: 63%
 
 		.side-info__wrapper
 			padding-top: $em*4.4
@@ -42,23 +24,18 @@
 			padding-right: $em*4.15
 			background: linear-gradient(to top, rgba(16, 25, 33, 0.12) 0%, rgba(13, 24, 35, 0.38) 39%, rgba(14, 24, 37, 0.57) 59%, rgba(13, 25, 37, 0.6) 100%)
 			
-			// @include dr
-			// 	padding-top: $em*4.4 
-			// 	padding-left: $em*4.15 
-			// 	padding-right: $em*4.15 
-			// @include lw
-			// 	padding-top: $em*2.2
-			// @include md
-			// 	background: linear-gradient(to top, rgba(13, 25, 37, 0.6) 0%, rgba(14, 25, 36, 0.43) 82%, rgba(10, 20, 31, 0.11) 100%)
-			// 	padding-left: 20px
-			// 	padding-right: 20px
+			@media (max-width: 768px)
+				background: url("../img/bottom-gradient.png")
+				padding-left: 20px
+				padding-right: 20px
+				padding-bottom: 10em
 
 			
 .wrapper
   &_create-account
     .header
       &__create-account
-				margin-top: 0
+        margin-top: 0
         margin-bottom: 0.3em
 
 .create-project

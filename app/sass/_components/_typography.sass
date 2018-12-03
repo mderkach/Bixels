@@ -12,11 +12,13 @@
     //   max-width: 365px
     //   margin: 0 auto
     //   font-size: 1em
-    @include md
+    @media (max-width: 768px)
       max-width: 100%
       font-size: 2.3em
-    @include xs
-      font-size: 1.7em
+    @media screen and (max-width: 640px)
+      font-size: 3em
+      max-width: 460px
+      margin: 0 auto
 
   &_p
     color: #fff
@@ -45,7 +47,7 @@
     //   font-size: 1.8em 
     // @include xl
     //   font-size: 1.2em
-    @include md
+    	@media (max-width: 768px)
       font-size: 3.1em
     @include xs
       font-size: 2.2em
