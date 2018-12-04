@@ -152,6 +152,9 @@ input
 				align-items: center
 				margin-top: -10px
 
+				@include mid
+					margin-top: -3px
+
 				.label-public
 					background: #d1d1d1
 					font-size: 1em
@@ -160,6 +163,11 @@ input
 						padding: 5px 10px
 						a
 							color: #d1d1d1
+							@include mid
+								padding: 5px
+
+						@include mid
+							padding: 5px
 
 	&__comment
 		position: relative

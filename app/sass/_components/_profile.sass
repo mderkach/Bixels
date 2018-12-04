@@ -3,13 +3,23 @@
     margin-bottom: 20px
     padding: 0
 
-    // @include lw
-    //   margin-bottom: 30px
+    @include mid
+      margin-left: auto
+      margin-right: auto
+      flex: 1 1 100%
+      padding: 0
+      border-radius: 0 !important
+    
   &__header
     border-radius: 10px
     padding: 3px
     background: #fff
     border-bottom: none
+
+    @include mid
+      padding: 0
+      border-radius: 0
+
   &__title-info
     display: flex
     position: relative
@@ -17,8 +27,8 @@
     height: 145px
     width: 100%
 
-    // @include dr
-    //   height: 195px
+    @include mid
+      border-radius: 0
 
     .profile__name
       align-self: flex-end
@@ -26,10 +36,9 @@
       margin-bottom: 0
       &:hover
         cursor: default
-      
-      // @include dr
-      //   font-size: 2em
-      //   line-height: 1.65
+
+      @include mid
+        display: none
 
   &__avatar-main
     position: relative
@@ -40,21 +49,32 @@
     border: 3px solid #fff
     border-radius: 50%
     
-    // @include dr
-    //   width: 300px
-    //   height: 300px
-    // @include dr
-    //   width: 250px
-    //   height: 250px
+    @include mid
+      margin: 0 auto
+      width: 120px
+      height: 120px
+      top: auto
+      bottom: -84px
 
   &__body
     display: flex
     padding-left: 250px
 
-    // @include dr
-    //   padding-left: 383px
-    // @include dr
-    //   padding-left: 333px
+    @include mid 
+      padding-top: 45px
+      padding-left: 15px
+      flex-wrap: wrap
+      justify-content: center
+
+    .profile__name
+      display: block
+      color: #000
+      text-align: center
+      flex-basis: 100%
+      font: 400 2em/1.65 "OpenSans", sans-serif
+
+      @media (min-width: 769px)
+        display: none !important
 
   &__stat
     display: flex

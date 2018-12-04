@@ -76,6 +76,16 @@
 	<div id="layout-content">
 		<div class="container pre-content__wrapper">
 			<div class="row flexible-row">
+				<!-- canvas mobile -->
+				<div class="col-xs-12 toggle-visibility canvas__wrapper">
+					<canvas style="width: 100%; height: 150px; background: lightgray;"></canvas>
+						<div class="canvas__tip">
+							<p>scroll right to inspect new projects <img src="./img/incon-scroll.png" alt=""></p>
+						</div>
+					<canvas style="width: 100%; height: 150px; background: lightgray;"></canvas>
+				</div>
+				
+				<!-- canvas mobile -->
 				<!-- container for side content -->
 				<aside class="aside_left">
 					<!-- NAV ASIDE -->
@@ -125,6 +135,22 @@
 				<!-- container for side content -->
 				<!-- container for posts -->
 				<main role="main" class="main-content-flow">
+					<!-- sticky mobile menu -->
+					<nav class="mobile-navigation_sticky">
+						<a class="col-xs-3 nav-link mobile-nav_link active">
+							Activity
+						</a>
+						<a class="col-xs-3 nav-link mobile-nav_link">
+							Projects
+						</a>
+						<a class="col-xs-3 nav-link mobile-nav_link">
+							Calendar
+						</a>
+						<a class="col-xs-3 nav-link mobile-nav_link">
+							<i class="fas fa-search"></i>
+						</a>
+					</nav>
+					<!-- sticky mobile menu -->
 					<!-- Sample post -->
 					<div class="col-xs-12 panel post">
 						<div class="panel-head post__head">
@@ -724,7 +750,9 @@
 						<!-- post content -->
 						<div class="panel-body post__body">
 							<p>
-								Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero repudiandae, quos id consequatur dicta officiis quod labore consectetur, corrupti odit nisi aut! Eius natus, pariatur quis commodi repellendus vel minima.
+								Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero repudiandae, quos id consequatur dicta
+								officiis quod labore consectetur, corrupti odit nisi aut! Eius natus, pariatur quis commodi repellendus vel
+								minima.
 							</p>
 							<div class="post__body_photos">
 								<img class="big-img" src="./img/photos-demo/1.png" alt="">
@@ -759,105 +787,107 @@
 					<!-- post type photos (8) -->
 					<!-- post type photos (3) -->
 					<div class="col-xs-12 panel post">
-							<div class="panel-head post__head">
-								<!-- post header -->
-								<div class="media">
-									<div class="media-left">
-										<a href="#">
-											<img class="media-object post__avatar" src="./img/default_avatar.jpg" alt="">
-										</a>
-									</div>
-									<div class="media-body">
-										<h4 class="media-heading">
-											<a href="#">Etherium project</a>
-										</h4>
-										<p class="time">25 sep. 2018 г.</p>
-									</div>
-									<div class="media-right">
-										<ul class="nav nav-pills preferences">
-											<li class="dropdown">
-												<a class="dropdown-toggle chevron-down" data-toggle="dropdown" href="#" aria-label="Toggle stream entry menu"
-												 aria-haspopup="true">
-													<i class="fa fa-angle-down"></i>
-												</a>
-												<ul class="dropdown-menu pull-right">
-													<li>
-														<!-- load modal confirm widget -->
-														<a href="#" data-action-click="delete">
-															<i class="fas fa-trash-alt"></i> Delete
-														</a>
-													</li>
-													<li>
-														<a href="#" class="stream-entry-edit-link" data-action-click="edit" data-action-url="/u/adminadmin/post/post/edit?id=25">
-															<i class="fas fa-pencil-alt"></i>Edit
-														</a>
-														<a href="#" class="stream-entry-cancel-edit-link" data-action-click="cancelEdit" style="display:none;">
-															<i class="fas fa-pencil-alt"></i>Cancel Edit
-														</a>
-													</li>
-													<li>
-														<a href="#" class="makePriavteLink" data-action-click="toggleVisibility" data-action-url="/content/content/toggle-visibility?id=256">
-															<i class="fas fa-lock makePrivate"></i>Make private
-														</a>
-													</li>
-													<li>
-														<a id="notification_off_256" class="turnOffNotifications" href="#" style="display: block">
-															<i class="fas fa-bell-slash"></i>Disable notifications
-														</a>
-														<a id="notification_on_256" class="turnOnNotifications" href="#" style="display: none">
-															<i class="fas fa-bell"></i>Enable
-															notifications
-														</a>
-													</li>
-													<li>
-														<a href="#" data-action-click="permalink" data-content-permalink="http://putinka.beget.tech/content/perma?id=256">
-															<i class="fas fa-link"></i>Permanent link
-														</a>
-													</li>
-													<li>
-														<a href="#" data-action-click="pin" data-action-url="/content/content/pin?id=256">
-															<i class="fas fa-arrow-up"></i>Pin to top
-														</a>
-													</li>
-												</ul>
-											</li>
-										</ul>
-									</div>
+						<div class="panel-head post__head">
+							<!-- post header -->
+							<div class="media">
+								<div class="media-left">
+									<a href="#">
+										<img class="media-object post__avatar" src="./img/default_avatar.jpg" alt="">
+									</a>
 								</div>
-								<!-- post header -->
-							</div>
-							<!-- post content -->
-							<div class="panel-body post__body">
-								<p>
-									Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero repudiandae, quos id consequatur dicta officiis quod labore consectetur, corrupti odit nisi aut! Eius natus, pariatur quis commodi repellendus vel minima.
-								</p>
-								<div class="post__body_photos medium-photos">
-									<img class="big-img" src="./img/photos-demo/1.png" alt="">
-									<img class="small-img" src="./img/photos-demo/2.2.png" alt="">
-									<img class="small-img" src="./img/photos-demo/3.2.png" alt="">
+								<div class="media-body">
+									<h4 class="media-heading">
+										<a href="#">Etherium project</a>
+									</h4>
+									<p class="time">25 sep. 2018 г.</p>
+								</div>
+								<div class="media-right">
+									<ul class="nav nav-pills preferences">
+										<li class="dropdown">
+											<a class="dropdown-toggle chevron-down" data-toggle="dropdown" href="#" aria-label="Toggle stream entry menu"
+											 aria-haspopup="true">
+												<i class="fa fa-angle-down"></i>
+											</a>
+											<ul class="dropdown-menu pull-right">
+												<li>
+													<!-- load modal confirm widget -->
+													<a href="#" data-action-click="delete">
+														<i class="fas fa-trash-alt"></i> Delete
+													</a>
+												</li>
+												<li>
+													<a href="#" class="stream-entry-edit-link" data-action-click="edit" data-action-url="/u/adminadmin/post/post/edit?id=25">
+														<i class="fas fa-pencil-alt"></i>Edit
+													</a>
+													<a href="#" class="stream-entry-cancel-edit-link" data-action-click="cancelEdit" style="display:none;">
+														<i class="fas fa-pencil-alt"></i>Cancel Edit
+													</a>
+												</li>
+												<li>
+													<a href="#" class="makePriavteLink" data-action-click="toggleVisibility" data-action-url="/content/content/toggle-visibility?id=256">
+														<i class="fas fa-lock makePrivate"></i>Make private
+													</a>
+												</li>
+												<li>
+													<a id="notification_off_256" class="turnOffNotifications" href="#" style="display: block">
+														<i class="fas fa-bell-slash"></i>Disable notifications
+													</a>
+													<a id="notification_on_256" class="turnOnNotifications" href="#" style="display: none">
+														<i class="fas fa-bell"></i>Enable
+														notifications
+													</a>
+												</li>
+												<li>
+													<a href="#" data-action-click="permalink" data-content-permalink="http://putinka.beget.tech/content/perma?id=256">
+														<i class="fas fa-link"></i>Permanent link
+													</a>
+												</li>
+												<li>
+													<a href="#" data-action-click="pin" data-action-url="/content/content/pin?id=256">
+														<i class="fas fa-arrow-up"></i>Pin to top
+													</a>
+												</li>
+											</ul>
+										</li>
+									</ul>
 								</div>
 							</div>
-							<!-- post content -->
-							<!-- post footer -->
-							<div class="panel-body post__footer">
-								<div class="media-left footer-body">
-									<div class="post__stat" id="likes">
-										<p class="stat__descr">
-											<img src="./img/svg/like.svg" alt="" class="stat__descr_icon">
-											Likes:</p>
-										<p class="stat__count">5</p>
-									</div>
-									<div class="post__stat" id="comments">
-										<p class="stat__descr">
-											<img src="./img/svg/comment.svg" alt="" class="stat__descr_icon">
-											Comments:</p>
-										<p class="stat__count">5</p>
-									</div>
-								</div>
-							</div>
-							<!-- post footer -->
+							<!-- post header -->
 						</div>
-						<!-- post type photos (3) -->
+						<!-- post content -->
+						<div class="panel-body post__body">
+							<p>
+								Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero repudiandae, quos id consequatur dicta
+								officiis quod labore consectetur, corrupti odit nisi aut! Eius natus, pariatur quis commodi repellendus vel
+								minima.
+							</p>
+							<div class="post__body_photos medium-photos">
+								<img class="big-img" src="./img/photos-demo/1.png" alt="">
+								<img class="small-img" src="./img/photos-demo/2.2.png" alt="">
+								<img class="small-img" src="./img/photos-demo/3.2.png" alt="">
+							</div>
+						</div>
+						<!-- post content -->
+						<!-- post footer -->
+						<div class="panel-body post__footer">
+							<div class="media-left footer-body">
+								<div class="post__stat" id="likes">
+									<p class="stat__descr">
+										<img src="./img/svg/like.svg" alt="" class="stat__descr_icon">
+										Likes:</p>
+									<p class="stat__count">5</p>
+								</div>
+								<div class="post__stat" id="comments">
+									<p class="stat__descr">
+										<img src="./img/svg/comment.svg" alt="" class="stat__descr_icon">
+										Comments:</p>
+									<p class="stat__count">5</p>
+								</div>
+							</div>
+						</div>
+						<!-- post footer -->
+					</div>
+					<!-- post type photos (3) -->
 				</main>
 				<!-- container for posts -->
 				<!-- container for side content -->

@@ -69,7 +69,8 @@ b, strong
 // inner pages //
 .pre-content__wrapper
 	padding-top: 30px
-
+	@include mid
+		padding-top: 0
 
 .main-content-flow
 	margin: 0 auto
@@ -77,6 +78,12 @@ b, strong
 	flex: 0 1 64%
 	display: flex
 	flex-direction: column
+
+	@include lg
+		flex: 0 1 100%	 
+
+	@include sm
+		flex: 0 1 95%
 
 	// @include dr
 	// 	flex: 0 1 56%
@@ -111,6 +118,12 @@ b, strong
 .d-md-none
 	@media (max-width: 640px)
 		display: none !important
+
+.toggle-visibility
+	@media (min-width: 992px)
+		display: none !important
+	@media (max-width: 991px)
+		display: block !important
 
 // typography //
 @import "_components/_typography"
@@ -151,3 +164,7 @@ b, strong
 // photos-demo //
 @import "_components/_photos-demo"
 // /photos-demo //
+
+// canvas //
+@import "_components/_canvas"
+// /canvas //

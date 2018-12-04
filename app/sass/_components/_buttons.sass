@@ -186,6 +186,10 @@ button, a
 	&__post-more
 		margin: 0 auto 20px auto
 		background: #fff
+
+		@include mid
+			display: none !important
+			
 		i
 			margin-right: 10px
 
@@ -245,6 +249,8 @@ button, a
 
 	@include xl
 		font-size: 1.2em
+	@include mid
+		font-size: 2em
 
 .image-upload-buttons
 	position: absolute
