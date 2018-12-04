@@ -3,12 +3,20 @@
   flex-wrap: wrap
   align-items: center
   justify-content: space-between
+
+  @include lg
+    padding: 0
+
   .big-img
     width: 100%
     margin-bottom: 5px
 
   .small-img
     max-width: 99px
+
+    @include lg
+    max-width: 85px
+    margin-bottom: 5px
 
 .medium-photos
   flex-direction: column
@@ -22,3 +30,4 @@
     flex: 0 0 48%
     max-width: 100%
     width: 29%
+
