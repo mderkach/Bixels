@@ -61,7 +61,7 @@
 						<!-- DESKTOP -->
 						<!-- MOBILE -->
 						<!-- <a role="button" class="col-xs-4 mobile__about" href="#">About Bixels</a> -->
-						<button data-toggle="modal" data-target="#login__modal" class="btn btn__login_mobile">Quest login</button>
+						<button data-toggle="modal" data-target="#login__modal" class="btn btn__login_mobile">Guest login</button>
 						<!-- MOBILE -->
 					</nav>
 				</div>
@@ -129,7 +129,7 @@
 						<div class="tab-pane active" id="login" role="tabpanel" aria-labelledby="login-tab">
 							<p>If you are already a registered user, please enter your username and password.</p>
 							<!-- FORM LOGIN IN MODAL -->
-							<form class="form__modal" action="#" method="GET">
+							<form class="form__modal" action="#" method="GET" onclick="toggleFormError();">
 								<div class="form-group">
 									<label for="username">Enter username or email</label>
 									<input type="text" class="form-control" id="username" placeholder="Enter username or email" spellcheck="false">
