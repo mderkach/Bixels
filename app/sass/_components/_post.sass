@@ -198,9 +198,11 @@
 
 
 .panel_mobile
+  position: relative
   .panel-header
     padding-left: 1em
     padding-right: 1em
+    padding-bottom: 1em !important
   .nav-link
     padding-left: 2em
   .btn__all-events
@@ -232,6 +234,15 @@
     left: 10px
     font: 600 1em "OpenSans", sans-serif
     z-index: 3
+
+.mobile-preferences
+  position: absolute
+  top: 0.5em
+  right: 0.5em
+  .chevron-down
+    padding: 15px 10px
+    img
+      width: 15px
 
 .search
   &-results

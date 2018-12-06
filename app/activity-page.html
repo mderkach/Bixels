@@ -1275,11 +1275,59 @@
           </div>
           <!-- Calendar -->
           <!-- Photos mobile -->
-          <div class="panel panel_mobile panel__events toggle-visibility" id="events">
+          <div class="panel panel_mobile panel__events toggle-visibility">
             <div class="panel-header events__header">
               <img src="./img/svg/photos.svg" alt="">
               Photos
             </div>
+            <ul class="nav nav-pills preferences mobile-preferences">
+                <li class="dropdown">
+                  <a class="dropdown-toggle chevron-down" data-toggle="dropdown" href="#" aria-label="Toggle stream entry menu"
+                    aria-haspopup="true">
+                    <img src="./img/chevron_down_gray.png" alt="">
+                  </a>
+                  <ul class="dropdown-menu pull-right">
+                    <li>
+                      <!-- load modal confirm widget -->
+                      <a href="#" data-action-click="delete">
+                        <i class="fas fa-trash-alt"></i> Delete
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="stream-entry-edit-link" data-action-click="edit" data-action-url="/u/adminadmin/post/post/edit?id=25">
+                        <i class="fas fa-pencil-alt"></i>Edit
+                      </a>
+                      <a href="#" class="stream-entry-cancel-edit-link" data-action-click="cancelEdit" style="display:none;">
+                        <i class="fas fa-pencil-alt"></i>Cancel Edit
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="makePriavteLink" data-action-click="toggleVisibility" data-action-url="/content/content/toggle-visibility?id=256">
+                        <i class="fas fa-lock makePrivate"></i>Make private
+                      </a>
+                    </li>
+                    <li>
+                      <a id="notification_off_256" class="turnOffNotifications" href="#" style="display: block">
+                        <i class="fas fa-bell-slash"></i>Disable notifications
+                      </a>
+                      <a id="notification_on_256" class="turnOnNotifications" href="#" style="display: none">
+                        <i class="fas fa-bell"></i>Enable
+                        notifications
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" data-action-click="permalink" data-content-permalink="http://putinka.beget.tech/content/perma?id=256">
+                        <i class="fas fa-link"></i>Permanent link
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" data-action-click="pin" data-action-url="/content/content/pin?id=256">
+                        <i class="fas fa-arrow-up"></i>Pin to top
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
             <div class="panel photos-mobile__wrapper">
               <div class="photos-mobile__item">
                 <img src="./img/photos-demo/1.png" alt="" class="photos-mobile__img">
