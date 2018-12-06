@@ -195,3 +195,40 @@
     &_descr
       font: 400 1em/1.5 "OpenSans", sans-serif
       color: $text
+
+
+.panel_mobile
+  .panel-header
+    padding-left: 1em
+    padding-right: 1em
+  .nav-link
+    padding-left: 2em
+  .btn__all-events
+    margin-left: 2em
+
+.photos-mobile
+  &__wrapper
+    padding-left: 1em
+    padding-right: 1em
+  &__item
+    position: relative
+    margin-bottom: 20px
+    &:after
+      content: ""
+      position: absolute
+      top: 0
+      left: 0
+      right: 0
+      bottom: 0
+      width: 100%
+      height: 100%
+      background-color: rgba(0,0,0,.35)
+  &__img
+    width: 100%
+  &__name
+    color: #fff
+    position: absolute
+    top: 15px
+    left: 10px
+    font: 600 1em "OpenSans", sans-serif
+    z-index: 3
