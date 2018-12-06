@@ -98,6 +98,7 @@ input
 				color: #fff
 				&::placeholder
 					color: #fff
+
 	&__quick-post
 		padding-top: 25px
 		padding-bottom: 25px
@@ -210,4 +211,23 @@ input
 				padding: 4px 12px
 				&:hover
 					color: #768a8f
-	
+
+.form
+  &__search
+    &_mobile
+      position: relative
+      input[type=text]
+        padding-left: 1em
+        border: none
+        box-shadow: none
+        font: 400 1em/1.5 "OpenSans",sans-serif
+        &:placeholder
+          color: #768a8f
+      button[type=submit]
+        border: none
+        background: none
+        font-size: 1em
+        color: #768a8f
+        position: absolute
+        top: 0.4em
+        right: 0.5em
