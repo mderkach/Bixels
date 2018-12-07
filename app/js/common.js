@@ -32,7 +32,9 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   }
   window.addEventListener('resize', function () {
-    appendHeight();
+    if (typeof (container) != 'undefined' && container != null) {
+      appendHeight();
+    }
   });
 
   // login page error show
@@ -41,7 +43,7 @@ document.addEventListener('DOMContentLoaded', function () {
     var login = form.querySelector('input[type=text]').checkValidity();
     var password = form.querySelector('input[type=password]').checkValidity();
     var errorMessage = document.querySelector('.invalid');
-    if (typeof (container) != 'undefined' && container != null && login == false || password == false) {
+    if (typeof (form) != 'undefined' && form != null && login == false || password == false) {
       errorMessage.style.visibility = 'visible';
     } else {
       errorMessage.style.visibility = 'hidden';
